@@ -20,8 +20,8 @@ export const NewestArticles = () => {
       .catch(error => setLoadingError(true));
   }, []);
   return (
-    <div className="m-0 bg-white relative lg:m-12 text-center pl-8 pr-8 lg:pl-32 lg:pr-32 shadow">
-      <h1 className="font-gilbert text-2xl m-6">Najnovšie články</h1>
+    <div className="m-0 bg-white relative pt-48 lg:pt-24 lg:m-48 text-center pl-32 pr-32 lg:pl-128 lg:pr-128 shadow">
+      <h1 className="font-gilbert text-31 mb-16">Najnovšie články</h1>
       <div className="flex flex-col items-center justify-center lg:flex-row">
         {articles.length === 0 ? (
           loadingError ? (
@@ -34,7 +34,7 @@ export const NewestArticles = () => {
             <div
               style={{ width: "230px", height: "304px" }}
               key={article.id}
-              className="ml-0 mt-2 lg:mt-0 lg:ml-2"
+              className="ml-0 mt-8 lg:mt-0 lg:ml-8"
             >
               <Thumbnail
                 name={article.heading}
@@ -48,7 +48,7 @@ export const NewestArticles = () => {
           ))
         )}
       </div>
-      <div className="mb-6 pb-6 mt-4">
+      <div className="mb-24 pb-24 mt-16">
         <Button>Všetky články</Button>
       </div>
     </div>

@@ -5,5 +5,5 @@ interface IProps {
 }
 
 export const InfoMessage: FC<IProps> = ({ text }) => (
-  <div className="mt-5 mr-12 ml-6 font-lato text-base">{text}</div>
+  <div className="mt-20 mr-48 ml-24 font-lato text-16">{text}</div>
 );

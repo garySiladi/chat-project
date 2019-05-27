@@ -4,7 +4,7 @@ export const DescriptionWrapper: FC = ({ children }) => {
   return (
     <div
       style={{ lineHeight: "57px" }}
-      className="w-full m-auto text-center pt-24 pb-24 pr-2 pl-2 lg:w-2/3"
+      className="w-full m-auto text-center pt-96 pb-96 pr-8 pl-8 lg:w-2/3"
     >
       {children}
     </div>

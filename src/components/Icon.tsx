@@ -7,8 +7,5 @@ interface IProps {
 }
 
 export const Icon: FC<IProps> = ({ src, className }) => (
-  <img
-    src={src}
-    className={classnames("text-sm font-lato h-10 leading-less", className)}
-  />
+  <img src={src} className={classnames(className)} />
 );

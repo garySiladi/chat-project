@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export const TextUnderButton: FC<IProps> = ({ text }) => (
-  <div className="text-xs text-center font-lato mt-2 text-grey pl-10 pr-10">
+  <div className="text-10 text-center font-lato mt-8 text-grey pl-40 pr-40">
     {text}
   </div>
 );

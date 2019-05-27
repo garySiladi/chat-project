@@ -13,30 +13,30 @@ const OverflowOvals = styled.div`
   overflow: hidden;
   width: 293px;
   height: 489px;
-  right: 0px;
+  right: 0;
 `;
 
 export const Footer: FC = () => (
-  <div className=" flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
+  <div className="flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
     <div className="flex lg:social-icons sm:social-icons social-icons">
-      <div className="w-12 mr-1">
+      <div className="w-48 mr-4">
         <a href="">
-          <Icon src={Facebook} />
+          <Icon src={Facebook} className="w-40" />
         </a>
       </div>
-      <div className="w-12 ml-1">
+      <div className="w-48 ml-4">
         <a href="">
-          <Icon src={Instagram} />
+          <Icon src={Instagram} className="w-40" />
         </a>
       </div>
     </div>
-    <div className=" lg:pl-16 z-20">
+    <div className="lg:pl-64 z-20">
       <Logo />
       <div className="lg:flex">
-        <div className="pb-6 pr-8">
+        <div className="pb-24 pr-32">
           <Info />
         </div>
-        <div className="sm:flex pt-6 pb-12 ">
+        <div className="sm:flex pt-24 pb-48">
           <Location />
           <Contacts />
         </div>

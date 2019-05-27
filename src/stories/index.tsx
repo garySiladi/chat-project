@@ -11,7 +11,7 @@ import icon from "../static/svg/homer.svg";
 import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import "../style/index.css";
 import "../style/fonts.css";

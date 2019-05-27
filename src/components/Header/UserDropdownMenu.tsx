@@ -32,25 +32,25 @@ export const UserDropdownMenu: FC<IProps> = ({
 }) => (
   <div className="bg-white w-full">
     <div className="flex justify-center flex-col items-center">
-      <div className="flex bg-lilac h-16 w-16 rounded-lg font-gilbert text-2xl justify-center items-center">
+      <div className="flex bg-lilac h-64 w-64 rounded-8 font-gilbert text-31 justify-center items-center">
         {userInicials}
       </div>
-      <div className="font-gilbert text-2xl mt-4">{userName}</div>
-      <div className="font-lato text-base text-blue mt-1">Kredit {credit}€</div>
+      <div className="font-gilbert text-31 mt-16">{userName}</div>
+      <div className="font-lato text-16 text-blue mt-4">Kredit {credit}€</div>
     </div>
     {links.map(({ src, title, to }) => (
       <div key={title}>
-        <div className="flex flex-row items-center justify-start ml-6 mt-4">
+        <div className="flex flex-row items-center justify-start ml-24 mt-16">
           <ImageHeader src={src} />
           <Link
             to={to}
             title={title}
-            className="font-lato text-base text-black no-underline font-bold ml-4"
+            className="font-lato text-16 text-black no-underline font-bold ml-16"
           >
             {title}
           </Link>
         </div>
-        <div className="bg-lilac mt-4 mb-4 ml-6 mr-6 h-px" />
+        <div className="bg-lilac mt-16 mb-16 ml-24 mr-24 h-px" />
       </div>
     ))}
   </div>

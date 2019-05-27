@@ -7,7 +7,7 @@ export const CheckboxLine: FC = ({ children }) => {
 
   return (
     <li
-      className="flex justify-start items-center pl-4 pt-1 text-sm font-lato cursor-pointer"
+      className="flex justify-start items-center pl-16 pt-4 text-12 font-lato"
       onClick={() => {
         setOpened(!isOpened);
       }}

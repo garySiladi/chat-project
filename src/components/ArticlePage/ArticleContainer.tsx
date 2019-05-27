@@ -19,11 +19,11 @@ export const ArticleContainer = () => {
 
   return (
     <BackgroundImage url={backgroundImage} isCover>
-      <div className="p-6">
+      <div className="p-24">
         <div className="bg-white">
           <ImageHeader
             src={articleData.src}
-            className="flex w-full h-64 justify-center m-0 p-3"
+            className="flex w-full h-256 justify-center m-0 p-12"
           />
           <Article
             date={articleData.date}
