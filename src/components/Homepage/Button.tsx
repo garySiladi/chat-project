@@ -7,11 +7,12 @@ interface IProps {
 
 export const Button: FC<IProps> = ({
   children,
-  className = "text-white font-lato font-bold"
+  className = "text-white font-lato font-bold "
 }) => (
   <button
+    style={{ lineHeight: "1" }}
     className={classNames(
-      "w-full h-40 flex justify-center items-center",
+      "w-full h-40 flex justify-center items-center items-center",
       className
     )}
   >

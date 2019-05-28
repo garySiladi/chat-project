@@ -53,8 +53,8 @@ export const Header = () => {
 
       <div className="flex justify-between items-center content-center h-64 lg:h-48 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
-        <div className="w-192">
-          <ImageHeader src={chatImg} width={73} className="h-24 lg:ml-48" />
+        <div className="lg:w-192">
+          <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
         </div>
         <Navigation />
         <UserProfile onClick={() => setUserProfile(true)} />
