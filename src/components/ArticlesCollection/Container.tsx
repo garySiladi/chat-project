@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "@emotion/styled";
 import background from "../../static/svg/backgroundImage.svg";
-import { AllArticles } from "./AllArticles";
+import { AllArticles } from "./ArticlesCollection";
 import { BackgroundImage } from "../Homepage/BackgroundImage";
 import { Description } from "../Description/Description";
-import { DescAndButton } from "../Description/DescrAndButton";
+import { DescrAndButton } from "../Description/DescrAndButton";
 
 const DescriptionWrapper = styled.div`
   width: 85%;
@@ -19,7 +19,7 @@ export const Container = () => (
     </DescriptionWrapper>
     <AllArticles />
     <DescriptionWrapper>
-      <DescAndButton />
+      <DescrAndButton />
     </DescriptionWrapper>
   </BackgroundImage>
 );

@@ -13,7 +13,7 @@ import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
-import { Container } from "../components/ArticleByCategory/Container";
+import { Container } from "../components/ArticlesCollection/Container";
 import "../style/index.css";
 import "../style/fonts.css";
 
