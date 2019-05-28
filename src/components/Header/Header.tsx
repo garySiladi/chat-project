@@ -15,7 +15,7 @@ export const Header = () => {
     <div>
       {openMenu && (
         <div>
-          <div className="flex justify-end mr-6 mt-4">
+          <div className="flex justify-end mr-24 mt-16">
             <div onClick={() => setOpenMenu(false)}>
               <ImageHeader src={closeImg} />
             </div>
@@ -30,7 +30,7 @@ export const Header = () => {
 
       {openUserProfile && (
         <div className="lg:hidden">
-          <div className="flex justify-end mr-6 mt-4">
+          <div className="flex justify-end mr-24 mt-16">
             <div onClick={() => setUserProfile(false)}>
               <ImageHeader src={closeImg} />
             </div>
@@ -41,15 +41,15 @@ export const Header = () => {
             credit={4}
           />
           <div
-            className="opacity-75 bg-darkblue h-full w-full lg:hidden"
+            className="opacity-75 bg-darkblue h-full w-full"
             onClick={() => setUserProfile(false)}
           />
         </div>
       )}
 
-      <div className="flex justify-between items-center content-center h-16 lg:h-12 w-full">
+      <div className="flex justify-between items-center content-center h-64 lg:h-48 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
-        <ImageHeader src={chatImg} width={73} className="h-6 lg:ml-12" />
+        <ImageHeader src={chatImg} width={73} className="h-24 lg:ml-48" />
         <Navigation />
         <UserProfile onClick={() => setUserProfile(true)} />
       </div>

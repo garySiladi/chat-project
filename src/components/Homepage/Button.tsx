@@ -11,7 +11,7 @@ export const Button: FC<IProps> = ({
 }) => (
   <button
     className={classNames(
-      "w-full h-10 flex justify-center items-center",
+      "w-full h-40 flex justify-center items-center",
       className
     )}
   >

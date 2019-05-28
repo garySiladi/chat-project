@@ -10,7 +10,7 @@ import background from "../../static/svg/backgroundImage.svg";
 export const LandingPageWrapper = () => {
   return (
     <BackgroundImage url={background} isCover>
-      <div className="pt-4 pb-24">
+      <div className="pt-16 pb-96">
         <Logo />
       </div>
       <DescriptionWrapper>
@@ -25,7 +25,7 @@ export const LandingPageWrapper = () => {
         <Description>
           Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
         </Description>
-        <div className="w-48 m-auto mt-6 bg-black rounded-lg">
+        <div className="w-192 m-auto mt-24 bg-black rounded-8">
           <Button>Registrovať sa</Button>
         </div>
       </DescriptionWrapper>

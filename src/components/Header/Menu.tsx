@@ -8,6 +8,6 @@ interface IProps {
 
 export const Menu: FC<IProps> = ({ onClick }) => (
   <div className="inline-block lg:hidden" onClick={onClick}>
-    <ImageHeader src={menuIcon} className="ml-4" />
+    <ImageHeader src={menuIcon} className="ml-16" />
   </div>
 );

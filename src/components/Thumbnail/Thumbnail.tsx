@@ -11,10 +11,10 @@ interface IProps {
   alt: string;
 }
 export const Thumbnail: FC<IProps> = ({ description, name, icon, alt }) => (
-  <div className="p-2 w-full shadow" style={{ height: "304px" }}>
+  <div className="p-8 w-full shadow" style={{ height: "304px" }}>
     <Image icon={icon} alt={alt} classname="mb-2" />
     <Name>{name}</Name>
-    <Description classname="mb-4">{description}</Description>
+    <Description className="mb-16">{description}</Description>
     <Button>Zistiť viac</Button>
   </div>
 );

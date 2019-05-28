@@ -6,7 +6,7 @@ export const Popup: FC = ({ children }) => (
       width: "343px",
       height: "420px"
     }}
-    className="pt-4 pb-6 border-black border m-auto flex flex-col justify-between"
+    className="pt-16 pb-24 border-black border m-auto flex flex-col justify-between"
   >
     {children}
   </div>

@@ -6,10 +6,8 @@ export const ScheduleFilter = () => {
   const [isShown, setShown] = useState(false);
 
   return (
-    <div className="cursor-pointer">
-      <div onClick={() => setShown(!isShown)}>
-        <Dropdown isShown={isShown} />
-      </div>
+    <div className="relative">
+      <Dropdown isShown={isShown} onClick={() => setShown(!isShown)} />
       {isShown && <List />}
     </div>
   );
