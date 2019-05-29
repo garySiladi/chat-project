@@ -5,5 +5,10 @@ interface IProps {
 }
 
 export const Message: FC<IProps> = ({ text }) => (
-  <div className="ml-24 mt-80 font-gilbert text-31">{text}</div>
+  <div
+    style={{ lineHeight: "1.1" }}
+    className="ml-24 mt-80 font-gilbert text-31"
+  >
+    {text}
+  </div>
 );
