@@ -9,28 +9,28 @@ export const Counter = () => {
   const increment = () => setCounter(counter + 1);
   const decrement = () => setCounter(counter - 1);
   return (
-    <div className="lg:pt-5 pt-3">
-      <div className="pt-5 text-sm font-lato font-bold">Počet miest</div>
-      <div className="pt-1 flex">
+    <>
+      <div className="pt-16 text-12 font-lato font-bold">Počet miest</div>
+      <div className="pt-4 flex">
         <div className="flex justify-between" style={{ width: "168px" }}>
-          <div className="w-10 h-10">
+          <div className="w-40 h-40">
             <Button onClick={decrement} isStretched>
-              <Icon src={minusIcon} className="w-6" />
+              <Icon src={minusIcon} className="mx-auto" />
             </Button>
           </div>
-          <div className="h-10" style={{ width: "80px" }}>
+          <div className="h-40" style={{ width: "80px" }}>
             <Button isStretched>{counter}</Button>
           </div>
-          <div className="w-10 h-10">
+          <div className="w-40 h-40">
             <Button onClick={increment} isStretched>
-              <Icon src={plusIcon} className="w-6" />
+              <Icon src={plusIcon} className="mx-auto" />
             </Button>
           </div>
         </div>
-        <Button isInverted isStretched className="flex-1 ml-4">
+        <Button isInverted isStretched className="flex-1 ml-16">
           Rezervovať
         </Button>
       </div>
-    </div>
+    </>
   );
 };

@@ -5,7 +5,7 @@ interface IProps {
 }
 
 export const DayInfoMessage: FC<IProps> = ({ text }) => (
-  <div className="lg:text-2xl lg:h-12 text-xl h-8 font-gilbert pl-6 border-b border-solid border-lilac">
+  <div className="lg:text-31 lg:h-64 flex items-center text-21 h-64 font-gilbert pl-24 border-b border-lilac">
     {text}
   </div>
 );

@@ -17,34 +17,34 @@ export const ReservationInfo: FC<IProps> = ({
   therapyLength,
   price
 }) => (
-  <div className="pt-4">
+  <div className="pt-16">
     <div className="flex">
-      <div className="text-xl font-gilbert border-solid border-1 pt-px pr-2 pb-3 border-lilac border-r">
+      <div className="text-21 font-gilbert border-solid pt-px pr-8 pb-8 border-lilac border-r">
         {date}
       </div>
-      <div className="text-xl ml-2 mt-px font-gilbert">{therapyName}</div>
+      <div className="text-21 ml-8 mt-px font-gilbert">{therapyName}</div>
     </div>
     <div className="flex flex-row items-center">
       <div
         style={{ marginLeft: "54px" }}
-        className="text-sm font-lato text-grey border-solid border-1 p-1 pr-2 border-lilac border-r"
+        className="text-12 font-lato text-grey border-solid p-4 pr-8 border-lilac border-r"
       >
         Terapeutka {doctorName}
       </div>
 
-      <div className="ml-2 text-sm font-lato text-grey">
+      <div className="ml-8 text-12 font-lato text-grey">
         Miestnosť č.{place}
       </div>
     </div>
     <div className="flex flex-row items-center">
       <div
         style={{ marginLeft: "54px" }}
-        className="mt-px text-sm font-lato text-grey border-solid border-1 p-1 pr-2 border-lilac border-r"
+        className="mt-px text-12 font-lato text-grey border-solid p-4 pr-8 border-lilac border-r"
       >
         {therapyLength} minút
       </div>
-      <div className="mt-px ml-1 text-sm font-lato text-grey">Cena:</div>
-      <div className="mt-px ml-1 text-lg font-gilbert">{price}€</div>
+      <div className="mt-px ml-4 text-12 font-lato text-grey">Cena:</div>
+      <div className="mt-px ml-4 text-18 font-gilbert">{price}€</div>
     </div>
   </div>
 );
