@@ -18,7 +18,7 @@ export const Counter = () => {
               <Icon src={minusIcon} className="mx-auto" />
             </Button>
           </div>
-          <div className="h-40" style={{ width: "80px" }}>
+          <div className="h-40 w-80">
             <Button isStretched>{counter}</Button>
           </div>
           <div className="w-40 h-40">

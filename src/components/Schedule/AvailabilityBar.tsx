@@ -19,7 +19,7 @@ export const AvailabilityBar: FC<IProps> = ({
           <div>{maxReservation}</div>
         </div>
       </div>
-      <div className="pt-8 border-b border-solid border-lilac relative flex items-center">
+      <div className="pt-8 border-b border-solid border-lilac relative flex items-center rounded-12">
         <ProgressBar actual={currentReservation} max={maxReservation} />
       </div>
     </>

@@ -30,7 +30,7 @@ export const Reservation: FC<IProps> = ({
       <ReservationInfo
         date={date}
         therapyName={name}
-        doctorName={therapeutName}
+        therapeutName={therapeutName}
         place={room}
         therapyLength={timeLength}
         price={price}

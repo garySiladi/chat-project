@@ -12,7 +12,7 @@ export const ProgressBar: FC<IProps> = ({ actual, max }) => {
   return (
     <div
       style={{ width: (actual / max) * 100 + "%" }}
-      className="border-b border-2 border-black absolute"
+      className="border-b border-2 border-black absolute rounded-12"
     />
   );
 };
