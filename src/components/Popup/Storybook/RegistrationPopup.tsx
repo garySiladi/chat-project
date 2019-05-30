@@ -13,7 +13,7 @@ export const RegistrationPopup = () => (
       <CloseButton />
       <Message text="Záväzná registrácia" />
       <InfoMessage text="BABY CHAT - 15:30, 28.január 2019" />
-      <PaymentInfo text="Cena arteterapie - 10 € " textColor="black" />
+      <PaymentInfo text="Cena arteterapie - 10 €" textColor="black" />
     </div>
     <div>
       <Button text="Potvrdiť a zaplatiť" backgroundColor="green" />
