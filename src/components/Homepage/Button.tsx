@@ -12,7 +12,7 @@ export const Button: FC<IProps> = ({
   <button
     style={{ lineHeight: "1" }}
     className={classNames(
-      "w-full h-40 flex justify-center items-center items-center",
+      "w-full h-40 flex justify-center items-center",
       className
     )}
   >

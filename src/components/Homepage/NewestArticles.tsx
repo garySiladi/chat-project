@@ -32,9 +32,9 @@ export const NewestArticles = () => {
         ) : (
           articles.map((article: IArticle) => (
             <div
-              style={{ width: "230px", height: "304px" }}
+              style={{ height: "408px" }}
               key={article.id}
-              className="ml-0 mt-8 lg:mt-0 lg:ml-8"
+              className="w-238 ml-0 mt-8 lg:mt-0 lg:ml-8"
             >
               <Thumbnail
                 name={article.heading}
@@ -48,8 +48,12 @@ export const NewestArticles = () => {
           ))
         )}
       </div>
-      <div className="mb-24 pb-24 mt-16">
-        <Button>Všetky články</Button>
+      <div className="mb-24 pb-24 mt-16 flex justify-center">
+        <div className="w-238">
+          <Button className="text-black font-lato font-black w-full">
+            Všetky články
+          </Button>
+        </div>
       </div>
     </div>
   );

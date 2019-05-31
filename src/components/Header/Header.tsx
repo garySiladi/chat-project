@@ -34,18 +34,20 @@ export const Header = () => {
 
       {openUserProfile && (
         <div className="lg:hidden">
-          <div className="flex justify-end mr-24 mt-16">
-            <div onClick={() => setUserProfile(false)}>
-              <ImageHeader src={closeImg} />
+          <div className="z-50 w-full fixed inset-0">
+            <div className="flex justify-end pr-24 pt-16 bg-white">
+              <div onClick={() => setUserProfile(false)}>
+                <ImageHeader src={closeImg} />
+              </div>
             </div>
+            <UserDropdownMenu
+              userInicials={"FS"}
+              userName={"Feri Schwartzeneger"}
+              credit={4}
+            />
           </div>
-          <UserDropdownMenu
-            userInicials={"FS"}
-            userName={"Feri Schwartzeneger"}
-            credit={4}
-          />
           <div
-            className="opacity-75 bg-darkblue h-full w-full"
+            className="opacity-75 z-20 fixed inset-0 bg-darkblue h-full w-full"
             onClick={() => setUserProfile(false)}
           />
         </div>
