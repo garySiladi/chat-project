@@ -25,7 +25,7 @@ export const LandingPageWrapper = () => {
         <Description>
           Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
         </Description>
-        <div className="w-192 m-auto mt-24 bg-black rounded-8 ">
+        <div className="w-192 m-auto mt-24 bg-black rounded-8">
           <Button>Registrovať sa</Button>
         </div>
       </DescriptionWrapper>

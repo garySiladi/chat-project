@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Header } from "../Header/Header";
+import { Header } from "../Header";
 import { Footer } from "../Footer/Footer";
 import background from "../../static/svg/backgroundImage.svg";
 import { BackgroundImage } from "../Homepage/BackgroundImage";
