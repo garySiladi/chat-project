@@ -31,16 +31,14 @@ export const Schedule = () => {
     <div style={{ maxWidth: "730px" }} className="shadow-lg m-auto">
       <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
       <div className="lg:px-24">
-        {data.map(therapy => {
-          return (
-            <div
-              key={therapy.id}
-              className="border-b border-lilac lg:pb-24 pb-16 px-24"
-            >
-              <Reservation {...therapy} />
-            </div>
-          );
-        })}
+        {data.map(therapy => (
+          <div
+            key={therapy.id}
+            className="border-b border-lilac lg:pb-24 pb-16 px-24"
+          >
+            <Reservation {...therapy} />
+          </div>
+        ))}
       </div>
     </div>
   );
