@@ -17,12 +17,12 @@ const links = [
 ];
 
 export const Navigation = () => (
-  <div className="hidden lg:inline-block mt-5">
+  <div className="hidden lg:inline-block mt-20">
     {links.map(({ title, to }) => (
       <Link
         key={title}
         to={to}
-        className="link pl-8 pr-8 pb-2 border-b-4 border-solid border-white hover:border-maize"
+        className="link pl-32 pr-32 pb-8 border-b-4 border-solid border-white hover:border-maize"
       >
         {title}
       </Link>

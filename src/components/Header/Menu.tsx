@@ -1,9 +1,13 @@
-import React from "react";
+import React, { FC } from "react";
 import menuIcon from "../../static/svg/menu.svg";
 import { ImageHeader } from "./ImageHeader";
 
-export const Menu = () => (
-  <div className="inline-block lg:hidden">
-    <ImageHeader src={menuIcon} className="ml-4" />
+interface IProps {
+  onClick: () => void;
+}
+
+export const Menu: FC<IProps> = ({ onClick }) => (
+  <div className="inline-block lg:hidden" onClick={onClick}>
+    <ImageHeader src={menuIcon} className="ml-16" />
   </div>
 );

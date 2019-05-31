@@ -3,7 +3,7 @@
     background-image: url('../static/svg/yellowfooterbig.svg');
     background-size: 100% 100%;
     height: 473px;
-  } 
+  }
   .lg\:bg-cover-image {
     background-image: url('../static/svg/yellowfooterbig.svg');
     background-size: auto 100%;
@@ -20,7 +20,7 @@
     height: 409px;
     right: 0;
     top: 20px;
-  } 
+  }
   .sm\:bg-oval {
     background-image: url('../static/svg/ovals.svg');
     width: 251px;
@@ -32,7 +32,7 @@
     width: 211px;
     height: 241px;
     top: 20px;
-  } 
+  }
   .social-icons {
     position: absolute;
     right: 0;
@@ -51,9 +51,9 @@
 }
 
 .link {
-  @apply font-gilbert no-underline inline-block font-bold text-base text-black;
+  @apply font-gilbert no-underline inline-block font-bold text-16 text-black;
 }
 
 .userProfileLinks {
-  @apply font-lato no-underline text-black text-sm;
+  @apply font-lato no-underline text-black text-12;
 }

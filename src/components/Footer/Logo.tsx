@@ -1,11 +1,9 @@
 import React from "react";
 
 export const Logo = () => (
-  <div className="flex lg:mb-8 items-center w-64 h-16">
-    <div className="text-4xl font-gilbert mr-2 font-bold color-black pl-6">
-      CHAT
-    </div>
-    <div className="text-sm font-gilbert font-bold color-black flex:block">
+  <div className="flex lg:mb-32 items-center h-64 font-gilbert font-bold color-black">
+    <div className="text-45 mr-8 pl-24">CHAT</div>
+    <div className="text-12 leading-12">
       <div>Centrum pre</div>
       <div>kreatívnu liečbu</div>
       <div>arteterapiou</div>

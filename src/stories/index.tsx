@@ -5,11 +5,14 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header/Header";
+import { Home } from "../components/Home";
+import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import icon from "../static/svg/homer.svg";
 import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
-import { Footer } from "../components/Footer";
+import { Footer } from "../components/Footer/Footer";
+import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -19,6 +22,11 @@ storiesOf("Buttons", module)
   .add("Button inverted", () => <Button isInverted>Button</Button>)
   .add("Button inverted stretched", () => (
     <Button isStretched isInverted>
+      Button
+    </Button>
+  ))
+  .add("Button onClick", () => (
+    <Button isStretched isInverted onClick={() => alert("Hi")}>
       Button
     </Button>
   ));
@@ -34,13 +42,23 @@ storiesOf("Popups", module)
   .add("RegistrationModal", () => <RegistrationPopup />)
   .add("CancelReservation", () => <CancelReservationPopup />)
   .add("ErrorPopup", () => <ErrorPopup />);
+
 storiesOf("Header", module).add("Header", () => <Header />);
 
 storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
   <Thumbnail
-    name="MAMA CHAT"
+    name="Nazov článku resp. novinky"
     icon={icon}
     alt="super"
-    description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+    description='A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of […]'
+    button="Zobraziť článok"
   />
+));
+
+storiesOf("Home", module).add("Home", () => <Home />);
+
+storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
+
+storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
+  <ScheduleFilter />
 ));
