@@ -7,6 +7,7 @@ import { Contacts } from "./Contacts";
 import { Location } from "./Location";
 import Instagram from "../../static/svg/instagram.svg";
 import Facebook from "../../static/svg/facebook-square.svg";
+import { Link } from "@reach/router";
 
 const OverflowOvals = styled.div`
   position: absolute;
@@ -18,32 +19,34 @@ const OverflowOvals = styled.div`
 
 export const Footer: FC = () => (
   <div className="flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
-    <div className="flex lg:social-icons sm:social-icons social-icons">
-      <div className="w-48 mr-4">
-        <a href="">
+    <div className="flex social-icons social-icons lg:social-icons">
+      <div className="flex flex-row mr-4">
+        <Link to="#">
           <Icon src={Facebook} className="w-40" />
-        </a>
-      </div>
-      <div className="w-48 ml-4">
-        <a href="">
+        </Link>
+        <Link to="#">
           <Icon src={Instagram} className="w-40" />
-        </a>
+        </Link>
       </div>
     </div>
     <div className="lg:pl-64 z-20">
       <Logo />
       <div className="lg:flex">
         <div className="pb-24 pr-32">
-          <Info />
+          <Info
+            title="OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou"
+            ico={42407681}
+            bankNumber="VÚB SK13 0200 0000 0035 0237 4057"
+          />
         </div>
         <div className="sm:flex pt-24 pb-48">
           <Location />
-          <Contacts />
+          <Contacts phoneNumber={421905271220} email="chatkosice@gmail.com" />
         </div>
       </div>
     </div>
     <OverflowOvals>
-      <div className="z-0 bg-oval sm:bg-oval lg:bg-oval" />
+      <div className="z-0 bg-oval lg:bg-oval" />
     </OverflowOvals>
   </div>
 );
