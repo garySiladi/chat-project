@@ -51,6 +51,7 @@ storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
     icon={icon}
     alt="super"
     description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+    button="Zistiť viac"
   />
 ));
 
