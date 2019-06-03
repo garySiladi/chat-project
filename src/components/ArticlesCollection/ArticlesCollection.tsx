@@ -3,7 +3,7 @@ import { Thumbnail } from "../Thumbnail/Thumbnail";
 import homer from "../../static/svg/homer.svg";
 import { Button } from "../Button";
 
-export const AllArticles = () => {
+export const ArticlesCollection = () => {
   const article = [
     {
       alt: "article",

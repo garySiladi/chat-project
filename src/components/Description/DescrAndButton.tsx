@@ -14,7 +14,7 @@ export const DescrAndButton: FC<IProps> = ({ isLoggedIn }) => {
     buttonText: isLoggedIn ? "Nákup kreditov" : "Registrovať sa"
   };
   return (
-    <div>
+    <div className="w-4/5 m-auto lg:w-1/2">
       <Description>{descriptionText}</Description>
       <span className="bg-white p-16">
         <Button isInverted>{buttonText}</Button>
