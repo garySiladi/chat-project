@@ -22,10 +22,10 @@ export const Thumbnail: FC<IProps> = ({
   date,
   button
 }) => (
-  <div className="p-8 shadow h-full flex-col flex justify-between">
+  <div className="p-8 shadow h-full flex-col flex justify-between font-lato">
     <Image icon={icon} alt={alt} classname="mb-8" />
-    {date && <Date>{date}</Date>}
-    <Name classname="font-lato">{name}</Name>
+    <Date>{date}</Date>
+    <Name classname="">{name}</Name>
     <Description classname="mb-16">{description}</Description>
     <Button>{button}</Button>
   </div>
