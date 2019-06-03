@@ -36,11 +36,11 @@ export const ReservationInfo: FC<IProps> = ({
     <div className="flex flex-row items-center">
       <div
         style={{ marginLeft: "54px" }}
-        className="mt-px text-12 font-lato text-grey border-solid p-4 pr-8 border-lilac border-r"
+        className="mt-px text-12 font-lato text-grey border-solid p-4 pr-4 border-lilac border-r"
       >
         {therapyLength} minút
       </div>
-      <div className="mt-px ml-4 text-12 font-lato text-grey">Cena:</div>
+      <div className="mt-px mx-4 text-12 font-lato text-grey">Cena:</div>
       <div className="mt-px ml-4 text-18 font-gilbert">{price}€</div>
     </div>
   </div>

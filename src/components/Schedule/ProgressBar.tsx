@@ -6,11 +6,11 @@ interface IProps {
 }
 
 export const ProgressBar: FC<IProps> = ({ actual, max }) => (
-  <div className="pt-8 border-b border-solid border-lilac relative flex items-center rounded-12">
+  <div className="mt-8 bg-lilac rounded-12">
     {actual !== 0 && (
       <div
-        style={{ width: (actual / max) * 100 + "%" }}
-        className="border-b border-2 border-black absolute rounded-12"
+        style={{ width: (actual / max) * 100 + "%", height: "3px" }}
+        className="bg-black rounded-12"
       />
     )}
   </div>

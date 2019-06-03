@@ -13,9 +13,9 @@ export const AvailabilityBar: FC<IProps> = ({
   <>
     <div className="flex justify-between lg:pt-20 pt-8 text-12 font-lato font-bold">
       <div>Obsadenosť</div>
-      <div className="flex content-end">
-        <div>{currentReservation}/</div>
-        <div>{maxReservation}</div>
+      <div>
+        <span>{currentReservation}/</span>
+        <span>{maxReservation}</span>
       </div>
     </div>
     <ProgressBar actual={currentReservation} max={maxReservation} />
