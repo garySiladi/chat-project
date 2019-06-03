@@ -10,9 +10,8 @@ export const Button: FC<IProps> = ({
   className = "text-white font-lato font-bold"
 }) => (
   <button
-    style={{ lineHeight: "1" }}
     className={classNames(
-      "w-full h-40 flex justify-center items-center",
+      "w-full h-40 flex justify-center leading-1 items-center",
       className
     )}
   >

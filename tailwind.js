@@ -188,6 +188,7 @@ module.exports = {
       widest: "0.1em"
     },
     lineHeight: {
+      "1": "1px",
       "12": "12px",
       "18": "18px",
       "22": "22px",
