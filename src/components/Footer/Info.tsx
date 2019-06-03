@@ -7,11 +7,9 @@ interface IProps {
 }
 
 export const Info: FC<IProps> = ({ title, ico, bankNumber }) => (
-  <div className="pt-20 pl-24 h-40">
-    <div className="text-10 font-lato">{title}</div>
-    <div className="text-10 font-lato">
-      <div>IČO: {ico}</div>
-      <div>Číslo účtu: {bankNumber}</div>
-    </div>
+  <div className="mt-20 ml-24 h-40 text-10 font-lato">
+    <div>{title}</div>
+    <div>IČO: {ico}</div>
+    <div>Číslo účtu: {bankNumber}</div>
   </div>
 );

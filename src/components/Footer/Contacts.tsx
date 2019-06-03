@@ -10,22 +10,20 @@ interface IProps {
 }
 
 export const Contacts: FC<IProps> = ({ phoneNumber, email }) => (
-  <div className="ml-24 mt-0 mr-16">
-    <div className="pb-4 flex justify-start items-center">
+  <div className="ml-24">
+    <div className="mb-4 flex items-center">
       <div className="mr-12 w-16">
         <Icon src={Phone} />
       </div>
       <div className="font-lato text-10">+ {phoneNumber}</div>
     </div>
-    <div className="pb-4 flex justify-start items-center">
+    <div className="flex items-center">
       <div className="mr-12 w-16">
         <Icon src={Email} />
       </div>
-      <div className="font-lato text-10">
-        <Link to="mailto:chatkosice@gmail.com" className="no-underline">
-          {email}
-        </Link>
-      </div>
+      <Link to="mailto:chatkosice@gmail.com" className="font-lato text-10">
+        {email}
+      </Link>
     </div>
   </div>
 );

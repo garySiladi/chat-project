@@ -11,7 +11,6 @@ import { Link } from "@reach/router";
 
 const OverflowOvals = styled.div`
   position: absolute;
-  overflow: hidden;
   width: 293px;
   height: 489px;
   right: 0;
@@ -39,7 +38,7 @@ export const Footer: FC = () => (
             bankNumber="VÚB SK13 0200 0000 0035 0237 4057"
           />
         </div>
-        <div className="sm:flex pt-24 pb-48">
+        <div className="sm:flex pb-48 lg:pt-24">
           <Location />
           <Contacts phoneNumber={421905271220} email="chatkosice@gmail.com" />
         </div>
