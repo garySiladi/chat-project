@@ -14,34 +14,40 @@ export const Header = () => {
   return (
     <div>
       {openMenu && (
-        <div>
-          <div className="flex justify-end mr-24 mt-16">
-            <div onClick={() => setOpenMenu(false)}>
-              <ImageHeader src={closeImg} />
+        <>
+          <div className="lg:hidden bg-white z-50 absolute w-full">
+            <div className="flex justify-end mr-24 mt-16">
+              <div onClick={() => setOpenMenu(false)}>
+                <ImageHeader src={closeImg} />
+              </div>
+            </div>
+            <div className="z-50">
+              <HamburgerMenu />
             </div>
           </div>
-          <HamburgerMenu />
           <div
-            className="opacity-75 bg-darkblue h-full w-full lg:hidden"
+            className="lg:hidden opacity-75 z-20 bg-darkblue fixed h-full w-full inset-0 lg:hidden"
             onClick={() => setOpenMenu(false)}
           />
-        </div>
+        </>
       )}
 
       {openUserProfile && (
         <div className="lg:hidden">
-          <div className="flex justify-end mr-24 mt-16">
-            <div onClick={() => setUserProfile(false)}>
-              <ImageHeader src={closeImg} />
+          <div className="z-50 w-full fixed inset-0">
+            <div className="flex justify-end pr-24 pt-16 bg-white">
+              <div onClick={() => setUserProfile(false)}>
+                <ImageHeader src={closeImg} />
+              </div>
             </div>
+            <UserDropdownMenu
+              userInicials={"FS"}
+              userName={"Feri Schwartzeneger"}
+              credit={4}
+            />
           </div>
-          <UserDropdownMenu
-            userInicials={"FS"}
-            userName={"Feri Schwartzeneger"}
-            credit={4}
-          />
           <div
-            className="opacity-75 bg-darkblue h-full w-full"
+            className="opacity-75 z-20 fixed inset-0 bg-darkblue h-full w-full"
             onClick={() => setUserProfile(false)}
           />
         </div>
@@ -49,7 +55,9 @@ export const Header = () => {
 
       <div className="flex justify-between items-center content-center h-64 lg:h-48 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
-        <ImageHeader src={chatImg} width={73} className="h-24 lg:ml-48" />
+        <div className="lg:w-192">
+          <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
+        </div>
         <Navigation />
         <UserProfile onClick={() => setUserProfile(true)} />
       </div>
