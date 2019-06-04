@@ -1,18 +1,12 @@
 import React, { FC } from "react";
-import { ReservationInfo } from "../Schedule/ReservationInfo";
+import { ReservationInfo, IReservationInfo } from "../Schedule/ReservationInfo";
 import { AvailabilityBar } from "./AvailabilityBar";
 import { Counter } from "../Schedule/Counter";
 
-interface IProps {
+interface IProps extends IReservationInfo {
   id: number;
   attendants: number;
   maxAttendants: number;
-  date: string;
-  price: number;
-  timeLength: number;
-  room: string;
-  therapeutName: string;
-  name: string;
 }
 export const Reservation: FC<IProps> = ({
   id,
@@ -29,10 +23,10 @@ export const Reservation: FC<IProps> = ({
     <div className="w-full lg:w-1/2">
       <ReservationInfo
         date={date}
-        therapyName={name}
+        name={name}
         therapeutName={therapeutName}
-        place={room}
-        therapyLength={timeLength}
+        room={room}
+        timeLength={timeLength}
         price={price}
       />
     </div>

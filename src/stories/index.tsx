@@ -4,7 +4,7 @@ import { CreditPopup } from "../components/Popup/Storybook/CreditPopup";
 import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
-import { Header } from "../components/Header/Header";
+import { Header } from "../components/Header";
 import { Schedule } from "../components/Schedule";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";

@@ -28,7 +28,7 @@ export const Schedule = () => {
     }
   ];
   return (
-    <div style={{ maxWidth: "730px" }} className="shadow-lg m-auto">
+    <div className="shadow-lg m-auto max-w-730">
       <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
       <div className="lg:px-24">
         {data.map(therapy => (
