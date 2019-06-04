@@ -1,18 +1,18 @@
 @responsive {
   .bg-cover-image {
-    background-image: url('../static/svg/yellowfooterbig.svg');
+    background-image: url("../static/svg/yellowfooterbig.svg");
     background-size: 100% 100%;
     height: 473px;
   }
   .lg\:bg-cover-image {
-    background-image: url('../static/svg/yellowfooterbig.svg');
+    background-image: url("../static/svg/yellowfooterbig.svg");
     background-size: auto 100%;
     height: 470px;
   }
   .bg-oval {
-    background-image: url('../static/svg/ovals.svg');
+    background-image: url("../static/svg/ovals.svg");
     position: absolute;
-    mix-blend-mode:multiply;
+    mix-blend-mode: multiply;
     padding-top: 50px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -22,13 +22,13 @@
     top: 20px;
   }
   .sm\:bg-oval {
-    background-image: url('../static/svg/ovals.svg');
+    background-image: url("../static/svg/ovals.svg");
     width: 251px;
     height: 301px;
     top: 20px;
   }
   .lg\:bg-oval {
-    background-image: url('../static/svg/ovals.svg');
+    background-image: url("../static/svg/ovals.svg");
     width: 211px;
     height: 241px;
     top: 20px;
