@@ -1,24 +1,18 @@
 import React from "react";
-import styled from "@emotion/styled";
 import background from "../../static/svg/backgroundImage.svg";
 import { ArticlesCollection } from "./ArticlesCollection";
 import { BackgroundImage } from "../Homepage/BackgroundImage";
 import { Description } from "../Description/Description";
-import { DescrAndButton } from "../Description/DescrAndButton";
+import { DescriptionAndButton } from "../Description/DescriptionAndButton";
 
-const DescriptionWrapper = styled.div`
-  text-align: center;
-  padding-top: 40px;
-  padding-bottom: 20px;
-`;
 export const Container = () => (
   <BackgroundImage url={background} isCover>
-    <DescriptionWrapper>
+    <div className="text-center pt-40 pb-20">
       <Description>Chcete sa dozvedieť viac o arteterapii?</Description>
-    </DescriptionWrapper>
+    </div>
     <ArticlesCollection />
-    <DescriptionWrapper>
-      <DescrAndButton />
-    </DescriptionWrapper>
+    <div className="text-center pt-40 pb-20">
+      <DescriptionAndButton />
+    </div>
   </BackgroundImage>
 );

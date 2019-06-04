@@ -62,6 +62,6 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
-storiesOf("ArticleByCategory", module).add("ArticleByCategory", () => (
+storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
   <Container />
 ));

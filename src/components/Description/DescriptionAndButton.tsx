@@ -1,12 +1,12 @@
 import React, { FC } from "react";
 import { Button } from "../Button";
-import { Description } from "../Description/Description";
+import { Description } from "./Description";
 
 interface IProps {
   isLoggedIn?: boolean;
 }
 
-export const DescrAndButton: FC<IProps> = ({ isLoggedIn }) => {
+export const DescriptionAndButton: FC<IProps> = ({ isLoggedIn }) => {
   const { descriptionText, buttonText } = {
     descriptionText: isLoggedIn
       ? "Pri viacmesačnom predpladtnom zľava až 20%"

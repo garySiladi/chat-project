@@ -3,7 +3,7 @@ import { List } from "./List";
 import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
-import { DescrAndButton } from "../Description/DescrAndButton";
+import { DescriptionAndButton } from "../Description/DescriptionAndButton";
 import { BackgroundImage } from "./BackgroundImage";
 import background from "../../static/svg/backgroundImage.svg";
 
@@ -22,7 +22,7 @@ export const LandingPageWrapper = () => {
       </DescriptionWrapper>
       <List />
       <DescriptionWrapper>
-        <DescrAndButton />
+        <DescriptionAndButton />
       </DescriptionWrapper>
     </BackgroundImage>
   );
