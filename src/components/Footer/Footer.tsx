@@ -32,15 +32,11 @@ export const Footer: FC = () => (
       <Logo />
       <div className="lg:flex">
         <div className="pb-24 pr-32">
-          <Info
-            title="OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou"
-            ico={42407681}
-            bankNumber="VÚB SK13 0200 0000 0035 0237 4057"
-          />
+          <Info />
         </div>
         <div className="sm:flex pb-48 lg:pt-24">
           <Location />
-          <Contacts phoneNumber={421905271220} email="chatkosice@gmail.com" />
+          <Contacts />
         </div>
       </div>
     </div>
