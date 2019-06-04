@@ -7,7 +7,6 @@ import { Contacts } from "./Contacts";
 import { Location } from "./Location";
 import Instagram from "../../static/svg/instagram.svg";
 import Facebook from "../../static/svg/facebook-square.svg";
-import { Link } from "@reach/router";
 
 const OverflowOvals = styled.div`
   position: absolute;
@@ -20,12 +19,12 @@ export const Footer: FC = () => (
   <div className="flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
     <div className="flex social-icons social-icons lg:social-icons">
       <div className="flex flex-row mr-4">
-        <Link to="#">
+        <a href="">
           <Icon src={Facebook} className="w-40" />
-        </Link>
-        <Link to="#">
+        </a>
+        <a href="">
           <Icon src={Instagram} className="w-40" />
-        </Link>
+        </a>
       </div>
     </div>
     <div className="lg:pl-64 z-20">

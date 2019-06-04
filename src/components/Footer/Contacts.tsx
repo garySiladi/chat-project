@@ -10,7 +10,7 @@ export const Contacts = () => (
       <div className="mr-12 w-16">
         <Icon src={Phone} />
       </div>
-      <div className="font-lato text-10">+ 421 905 271 220</div>
+      <div className="font-lato text-10">+421 905 271 220</div>
     </div>
     <div className="flex items-center">
       <div className="mr-12 w-16">
