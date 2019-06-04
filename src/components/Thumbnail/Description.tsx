@@ -2,9 +2,10 @@ import React, { FC } from "react";
 import classnames from "classnames";
 
 interface IProps {
-  classname?: string;
+  text: string;
+  className?: string;
 }
 
-export const Description: FC<IProps> = ({ children, classname }) => (
-  <div className={classnames("leading-22 text-16", classname)}>{children}</div>
+export const Description: FC<IProps> = ({ text, className }) => (
+  <div className={classnames(className)}>{text}</div>
 );

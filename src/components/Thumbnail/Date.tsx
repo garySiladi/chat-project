@@ -1,5 +1,9 @@
 import React, { FC } from "react";
 
-export const Date: FC = ({ children }) => (
-  <div className="text-10 text-grey">{children}</div>
+interface IProps {
+  text: string;
+}
+
+export const Date: FC<IProps> = ({ text }) => (
+  <div className="text-10 text-grey leading-12">{text}</div>
 );

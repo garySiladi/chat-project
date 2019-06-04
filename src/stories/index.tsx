@@ -7,8 +7,8 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header/Header";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
-import icon from "../static/svg/homer.svg";
-import { Thumbnail } from "../components/Thumbnail/Thumbnail";
+import { ThumbnailTherapy } from "../components/Thumbnail/storybook/ThumbnailTherapy";
+import { ThumbnailArticle } from "../components/Thumbnail/storybook/ThumbnailArticle";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
@@ -45,15 +45,9 @@ storiesOf("Popups", module)
 
 storiesOf("Header", module).add("Header", () => <Header />);
 
-storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
-  <Thumbnail
-    name="MAMA CHAT"
-    icon={icon}
-    alt="super"
-    description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
-    button="Zistiť viac"
-  />
-));
+storiesOf("Thumbnail", module)
+  .add("Therapy", () => <ThumbnailTherapy />)
+  .add("Article", () => <ThumbnailArticle />);
 
 storiesOf("Home", module).add("Home", () => <Home />);
 
