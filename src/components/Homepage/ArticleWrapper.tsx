@@ -8,7 +8,7 @@ export interface IArticle {
   insight: string;
   titlePhoto: string;
 }
-export const ArticleWrapper: FC<IArticleProps> = ({
+export const ArticleWrapper: FC<IArticle> = ({
   id,
   heading,
   insight,
