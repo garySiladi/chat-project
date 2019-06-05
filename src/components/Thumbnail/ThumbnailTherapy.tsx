@@ -21,9 +21,9 @@ export const ThumbnailTherapy: FC<IProps> = ({
   alt
 }) => (
   <Thumbnail className="w-238 h-304 shadow">
-    <Image icon={icon} alt={alt} className="mb-8 w-full" />
-    <Name className="font-gilbert">{name}</Name>
-    <Description className="mb-16 text-12 leading-18">
+    <Image icon={icon} alt={alt} className="mb-8 w-full h-160" />
+    <Name className="font-gilbert h-28">{name}</Name>
+    <Description className="mb-16 text-12 leading-18 h-36">
       {description}
     </Description>
     <Button>{button}</Button>
