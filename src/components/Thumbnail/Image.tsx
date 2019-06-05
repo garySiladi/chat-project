@@ -8,5 +8,5 @@ interface IProps {
 }
 
 export const Image: FC<IProps> = ({ icon, alt, className }) => (
-  <img alt={alt} src={icon} className={classnames("w-full h-160", className)} />
+  <img alt={alt} src={icon} className={classnames(className)} />
 );

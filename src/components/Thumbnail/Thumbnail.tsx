@@ -1,7 +1,11 @@
 import React, { FC } from "react";
+import classnames from "classnames";
 
-export const Thumbnail: FC = ({ children }) => (
-  <div className="p-8 text-left shadow w-full h-full flex-col flex justify-between font-lato">
+interface IProps {
+  className: string;
+}
+export const Thumbnail: FC<IProps> = ({ children, className }) => (
+  <div className={classnames("p-8 text-left flex-col font-lato", className)}>
     {children}
   </div>
 );

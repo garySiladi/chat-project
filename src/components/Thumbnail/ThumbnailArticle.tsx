@@ -7,7 +7,7 @@ import { Date } from "./Date";
 import { Thumbnail } from "./Thumbnail";
 
 interface IProps {
-  date?: string;
+  date: string;
   name: string;
   description: string;
   button: string;
@@ -23,10 +23,10 @@ export const ThumbnailArticle: FC<IProps> = ({
   icon,
   alt
 }) => (
-  <Thumbnail>
-    <Image icon={icon} alt={alt} className="mb-8" />
-    <Date>{date}</Date>
-    <Name className="font-lato">{name}</Name>
+  <Thumbnail className="w-238 h-408 border border-solid border-lilac">
+    <Image icon={icon} alt={alt} className="mb-8 w-full h-160" />
+    <Date className="mb-4">{date}</Date>
+    <Name className="font-lato mb-8">{name}</Name>
     <Description className="text-16 leading-22 mb-12">
       {description}
     </Description>
