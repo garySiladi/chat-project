@@ -7,8 +7,8 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
-import { ThumbnailTherapy } from "../components/Thumbnail/storybook/ThumbnailTherapy";
-import { ThumbnailArticle } from "../components/Thumbnail/storybook/ThumbnailArticle";
+import { ThumbnailTherapy } from "../components/Thumbnail/ThumbnailTherapy";
+import { ThumbnailArticle } from "../components/Thumbnail/ThumbnailArticle";
 import icon from "../static/svg/homer.svg";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
@@ -58,6 +58,7 @@ storiesOf("Thumbnail", module)
   ))
   .add("Article", () => (
     <ThumbnailArticle
+      date="99.99.9999"
       alt="super"
       icon={icon}
       name="Nazov článku resp. novinky"

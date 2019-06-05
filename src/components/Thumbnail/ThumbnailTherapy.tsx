@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { Button } from "../Button";
-import { Description } from "../Description";
-import { Image } from "../Image";
-import { Name } from "../Name";
-import { Thumbnail } from "../Thumbnail";
+import { Button } from "./Button";
+import { Description } from "./Description";
+import { Image } from "./Image";
+import { Name } from "./Name";
+import { Thumbnail } from "./Thumbnail";
 
 interface IProps {
   name: string;
@@ -26,6 +26,6 @@ export const ThumbnailTherapy: FC<IProps> = ({
     <Description className="mb-16 text-12 leading-18">
       {description}
     </Description>
-    <Button className="mb-8">{button}</Button>
+    <Button>{button}</Button>
   </Thumbnail>
 );

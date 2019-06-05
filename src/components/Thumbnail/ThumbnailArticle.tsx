@@ -1,10 +1,10 @@
 import React, { FC } from "react";
-import { Button } from "../Button";
-import { Description } from "../Description";
-import { Image } from "../Image";
-import { Name } from "../Name";
-import { Date } from "../Date";
-import { Thumbnail } from "../Thumbnail";
+import { Button } from "./Button";
+import { Description } from "./Description";
+import { Image } from "./Image";
+import { Name } from "./Name";
+import { Date } from "./Date";
+import { Thumbnail } from "./Thumbnail";
 
 interface IProps {
   date?: string;
@@ -30,6 +30,6 @@ export const ThumbnailArticle: FC<IProps> = ({
     <Description className="text-16 leading-22 mb-12">
       {description}
     </Description>
-    <Button className="mb-16">{button}</Button>
+    <Button className="mb-8">{button}</Button>
   </Thumbnail>
 );

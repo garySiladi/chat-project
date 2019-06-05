@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import { backendHostname } from "../../RoutesConfig";
-import { ThumbnailArticle } from "../Thumbnail/storybook/ThumbnailArticle";
+import { ThumbnailArticle } from "../Thumbnail/ThumbnailArticle";
 
 export interface IArticle {
   id: number;
