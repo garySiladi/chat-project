@@ -2,12 +2,11 @@ import React, { FC } from "react";
 import classnames from "classnames";
 
 interface IProps {
-  text: string;
   className: string;
 }
 
-export const Name: FC<IProps> = ({ text, className }) => (
+export const Name: FC<IProps> = ({ children, className }) => (
   <h5 className={classnames("text-21 text-black font-bold", className)}>
-    {text}
+    {children}
   </h5>
 );

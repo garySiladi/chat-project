@@ -9,6 +9,7 @@ import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import { ThumbnailTherapy } from "../components/Thumbnail/storybook/ThumbnailTherapy";
 import { ThumbnailArticle } from "../components/Thumbnail/storybook/ThumbnailArticle";
+import icon from "../static/svg/homer.svg";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
@@ -46,8 +47,24 @@ storiesOf("Popups", module)
 storiesOf("Header", module).add("Header", () => <Header />);
 
 storiesOf("Thumbnail", module)
-  .add("Therapy", () => <ThumbnailTherapy />)
-  .add("Article", () => <ThumbnailArticle />);
+  .add("Therapy", () => (
+    <ThumbnailTherapy
+      alt="super"
+      icon={icon}
+      name="MAMA CHAT"
+      description="Senzorické hry pre deti do 3 rokov sú skveloou príležitosťou nechať svoje [...]"
+      button="Zistiť viac"
+    />
+  ))
+  .add("Article", () => (
+    <ThumbnailArticle
+      alt="super"
+      icon={icon}
+      name="Nazov článku resp. novinky"
+      description='A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of […]'
+      button="Zobraziť článok"
+    />
+  ));
 
 storiesOf("Home", module).add("Home", () => <Home />);
 
