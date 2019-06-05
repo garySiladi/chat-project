@@ -16,6 +16,7 @@ export const ArticleWrapper: FC<IArticle> = ({
 }) => (
   <div className="w-238 h-408 ml-0 mt-8 lg:mt-0 lg:ml-8">
     <ThumbnailArticle
+      date="pararara"
       name={heading}
       icon={`${backendHostname}/image/214/160/${titlePhoto}`}
       alt={heading}

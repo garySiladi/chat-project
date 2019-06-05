@@ -53,7 +53,7 @@ export const Header = () => {
         </div>
       )}
 
-      <div className="flex justify-between items-center h-64 lg:h-48 w-full">
+      <div className="flex justify-between items-center content-center h-64 lg:h-48 w-full">
         <Menu onClick={() => setOpenMenu(true)} />
         <div className="lg:w-192">
           <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
