@@ -14,11 +14,13 @@ export const DescriptionAndButton: FC<IProps> = ({ isLoggedIn }) => {
     buttonText: isLoggedIn ? "Nákup kreditov" : "Registrovať sa"
   };
   return (
-    <div className="w-4/5 m-auto lg:w-1/2">
-      <Description>{descriptionText}</Description>
-      <span className="bg-white p-16">
+    <>
+      <div className="w-4/5 m-auto" style={{ lineHeight: "57px" }}>
+        <Description>{descriptionText}</Description>
+      </div>
+      <span className="bg-white p-20">
         <Button isInverted>{buttonText}</Button>
       </span>
-    </div>
+    </>
   );
 };
