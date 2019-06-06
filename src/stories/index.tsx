@@ -52,7 +52,7 @@ storiesOf("Thumbnail", module)
       alt="super"
       icon={icon}
       name="MAMA CHAT"
-      description="Senzorické hry pre deti do 3 rokov sú skveloou príležitosťou nechať svoje [...]"
+      description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
       button="Zistiť viac"
     />
   ))

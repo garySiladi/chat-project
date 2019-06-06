@@ -5,7 +5,12 @@ interface IProps {
   className?: string;
 }
 export const Thumbnail: FC<IProps> = ({ children, className }) => (
-  <div className={classnames("p-8 text-left flex-col font-lato", className)}>
+  <div
+    className={classnames(
+      "p-8 text-left flex-col font-lato overflow-hidden",
+      className
+    )}
+  >
     {children}
   </div>
 );
