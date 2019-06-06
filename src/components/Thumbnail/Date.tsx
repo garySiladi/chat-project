@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import classnames from "classnames";
 
 interface IProps {
-  className: string;
+  className?: string;
 }
 
 export const Date: FC<IProps> = ({ children, className }) => (
