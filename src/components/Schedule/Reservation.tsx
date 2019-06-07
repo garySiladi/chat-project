@@ -9,7 +9,6 @@ interface IProps extends IReservationInfo {
   maxAttendants: number;
 }
 export const Reservation: FC<IProps> = ({
-  id,
   attendants,
   maxAttendants,
   date,

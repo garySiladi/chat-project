@@ -18,17 +18,17 @@ export const ReservationInfo: FC<IReservationInfo> = ({
   price
 }) => (
   <div className="pt-16">
-    <div className="flex font-gilbert">
-      <div className="text-21 border-solid pt-px pr-8 pb-8 border-lilac border-r">
+    <div className="flex font-gilbert text-21">
+      <div className="border-solid pt-px pr-8 pb-8 border-lilac border-r">
         {date}
       </div>
-      <div className="text-21 ml-8 mt-px">{name}</div>
+      <div className="ml-8 mt-px">{name}</div>
     </div>
-    <div className="flex flex-row items-center font-lato">
-      <div className="text-12 text-grey border-solid p-4 pr-8 border-lilac border-r ml-54">
+    <div className="flex flex-row items-center font-lato text-12">
+      <div className="text-grey border-solid p-4 pr-8 border-lilac border-r ml-54">
         Terapeut {therapeutName}
       </div>
-      <div className="ml-8 text-12 text-grey">Miestnosť č.{room}</div>
+      <div className="ml-8 text-grey">Miestnosť č.{room}</div>
     </div>
     <div className="flex flex-row items-center">
       <div className="mt-px text-12 font-lato text-grey border-solid p-4 pr-4 border-lilac border-r ml-54">
