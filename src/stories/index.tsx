@@ -13,7 +13,7 @@ import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
-import { ChatInfo } from "../components/ChatInfo/ChatInfo";
+import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -65,6 +65,6 @@ storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
 
 storiesOf("ChatInfo", module).add("ChatInfo", () => (
   <div className="bg-blue">
-    <ChatInfo />{" "}
+    <ChatInfo />
   </div>
 ));

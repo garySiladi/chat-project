@@ -22,11 +22,10 @@ export const TextBackground: FC<IProps> = ({
   top,
   children
 }) => (
-  <div style={{ position: "relative" }}>
+  <div className="relative">
     <div
+      className="relative bg-white"
       style={{
-        position: "relative",
-        backgroundColor: "white",
         width: width + "px",
         right: right + "px",
         bottom: bottom + "px",
@@ -35,8 +34,8 @@ export const TextBackground: FC<IProps> = ({
       }}
     />
     <div
+      className="absolute"
       style={{
-        position: "absolute",
         left: left + "px",
         zIndex,
         top: top + "px"
