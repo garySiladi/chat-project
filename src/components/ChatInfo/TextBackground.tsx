@@ -3,11 +3,11 @@ import React, { FC } from "react";
 interface IProps {
   width: number;
   height: number;
-  deg?: number;
+  deg: number;
   left: number;
-  bottom?: number;
-  right?: number;
-  top?: number;
+  bottom: number;
+  right: number;
+  top: number;
   zIndex?: number;
 }
 
