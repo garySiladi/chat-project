@@ -16,9 +16,9 @@ export const Contacts = () => (
       <div className="mr-12 w-16">
         <Icon src={Email} />
       </div>
-      <Link to="mailto:chatkosice@gmail.com" className="font-lato text-10">
+      <a href="mailto:chatkosice@gmail.com" className="font-lato text-10">
         chatkosice@gmail.com
-      </Link>
+      </a>
     </div>
   </div>
 );
