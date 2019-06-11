@@ -10,7 +10,6 @@ interface IProps {
   date: string;
   name: string;
   description: string;
-  button: string;
   icon: string;
   alt: string;
 }
@@ -19,7 +18,6 @@ export const ThumbnailArticle: FC<IProps> = ({
   date,
   name,
   description,
-  button,
   icon,
   alt
 }) => (
@@ -30,6 +28,6 @@ export const ThumbnailArticle: FC<IProps> = ({
     <Description className="text-16 leading-22 mb-12 h-86">
       {description}
     </Description>
-    <Button className="mb-8">{button}</Button>
+    <Button className="mb-8">Zobraziť článok</Button>
   </Thumbnail>
 );

@@ -8,7 +8,6 @@ import { Thumbnail } from "./Thumbnail";
 interface IProps {
   name: string;
   description: string;
-  button: string;
   alt: string;
   icon: string;
 }
@@ -16,7 +15,6 @@ interface IProps {
 export const ThumbnailTherapy: FC<IProps> = ({
   name,
   description,
-  button,
   icon,
   alt
 }) => (
@@ -26,6 +24,6 @@ export const ThumbnailTherapy: FC<IProps> = ({
     <Description className="mb-16 text-12 leading-18 h-36">
       {description}
     </Description>
-    <Button>{button}</Button>
+    <Button>Zistiť viac</Button>
   </Thumbnail>
 );

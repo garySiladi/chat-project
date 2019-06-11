@@ -53,7 +53,6 @@ storiesOf("Thumbnail", module)
       icon={icon}
       name="MAMA CHAT"
       description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
-      button="Zistiť viac"
     />
   ))
   .add("Article", () => (
@@ -63,7 +62,6 @@ storiesOf("Thumbnail", module)
       icon={icon}
       name="Nazov článku resp. novinky"
       description='A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of […]'
-      button="Zobraziť článok"
     />
   ));
 

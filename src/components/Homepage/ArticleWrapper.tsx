@@ -21,7 +21,6 @@ export const ArticleWrapper: FC<IArticle> = ({
       icon={`${backendHostname}/image/214/160/${titlePhoto}`}
       alt={heading}
       description={insight}
-      button="Zobraziť článok"
     />
   </div>
 );
