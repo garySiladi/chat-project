@@ -24,7 +24,7 @@ export const ThumbnailArticle: FC<IProps> = ({
   <Thumbnail className="w-238 h-408 border border-solid border-lilac">
     <Image icon={icon} alt={alt} className="mb-8 w-full h-166" />
     <Date className="mb-4 h-12">{date}</Date>
-    <Name className="font-lato mb-8 h-50">{name}</Name>
+    <Name className="font-lato mb-8 leading-22">{name}</Name>
     <Description className="text-16 leading-22 mb-12 h-86">
       {description}
     </Description>
