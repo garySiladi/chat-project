@@ -22,7 +22,7 @@ export const Navigation = () => (
       <Link
         key={title}
         to={to}
-        className="link pl-32 pr-32 pb-8 border-b-4 border-solid border-white hover:border-maize"
+        className="link pl-32 pr-32 pt-8  border-b-4 border-solid border-white hover:border-maize"
       >
         {title}
       </Link>

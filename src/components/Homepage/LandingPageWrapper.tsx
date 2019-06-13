@@ -5,11 +5,11 @@ import { Logo } from "./Logo";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
 import { DescrAndButton } from "../Description/DescrAndButton";
 import { BackgroundImage } from "./BackgroundImage";
-import background from "../../static/svg/backgroundImage.svg";
+import { NewestArticles } from "./NewestArticles";
 
 export const LandingPageWrapper = () => {
   return (
-    <BackgroundImage url={background} isCover>
+    <>
       <div className="pt-16 pb-96">
         <Logo />
       </div>
@@ -24,6 +24,7 @@ export const LandingPageWrapper = () => {
       <DescriptionWrapper>
         <DescrAndButton />
       </DescriptionWrapper>
-    </BackgroundImage>
+      <NewestArticles />
+    </>
   );
 };
