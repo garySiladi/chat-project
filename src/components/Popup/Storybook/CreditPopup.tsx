@@ -13,7 +13,7 @@ export const CreditPopup = () => (
       <InfoMessage text="Na Vašom konte nemáte dostatok kreditov aby ste sa mohli prihlási’t na zvolenú arteterapiu." />
     </div>
     <div>
-      <Button text="Nákup kreditov" backgroundColor="black" />
+      <Button className="h-50" text="Nákup kreditov" backgroundColor="black" />
     </div>
   </Popup>
 );
