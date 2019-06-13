@@ -6,7 +6,7 @@ interface IProps {
   isLoggedIn?: boolean;
 }
 
-export const DescrAndButton: FC<IProps> = ({ isLoggedIn = false }) => {
+export const DescriptionAndButton: FC<IProps> = ({ isLoggedIn = false }) => {
   const descriptionText = isLoggedIn
     ? "Pri viacmesačnom predpladtnom zľava až 20%"
     : "Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.";

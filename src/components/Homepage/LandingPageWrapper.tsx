@@ -3,7 +3,8 @@ import { List } from "./List";
 import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
-import { DescrAndButton } from "../Description/DescrAndButton";
+import { DescriptionAndButton } from "../Description/DescriptionAndButton";
+
 import { NewestArticles } from "./NewestArticles";
 
 export const LandingPageWrapper = () => {
@@ -21,7 +22,7 @@ export const LandingPageWrapper = () => {
       </DescriptionWrapper>
       <List />
       <DescriptionWrapper>
-        <DescrAndButton />
+        <DescriptionAndButton />
       </DescriptionWrapper>
       <NewestArticles />
     </>

@@ -5,7 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header";
-import { Home } from "../components/Home";
+import { Home } from "../components/Home/index";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import icon from "../static/svg/homer.svg";
 import { Thumbnail } from "../components/Thumbnail/Thumbnail";
@@ -62,6 +62,6 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
-storiesOf("ArticleByCategory", module).add("ArticleByCategory", () => (
+storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
   <Container />
 ));
