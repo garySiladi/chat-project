@@ -2,7 +2,6 @@ import React from "react";
 import Phone from "../../static/svg/icon-phone.svg";
 import Email from "../../static/svg/email.svg";
 import { Icon } from "../Icon";
-import { Link } from "@reach/router";
 
 export const Contacts = () => (
   <div className="ml-24">

@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Info = () => (
-  <div className="mt-20 ml-24 h-40 text-10 font-lato">
+  <div className="mt-20 ml-24 h-40 text-12 font-lato">
     <div className="font-bold">
       OZ CHAT - Centrum pre kreatívnu liečbu Arteterapiou
     </div>
