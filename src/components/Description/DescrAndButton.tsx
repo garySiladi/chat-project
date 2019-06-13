@@ -6,17 +6,16 @@ interface IProps {
   isLoggedIn?: boolean;
 }
 
-export const DescrAndButton: FC<IProps> = ({ isLoggedIn }) => {
-  const { descriptionText, buttonText } = {
-    descriptionText: isLoggedIn
-      ? "Pri viacmesačnom predpladtnom zľava až 20%"
-      : "Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.",
-    buttonText: isLoggedIn ? "Nákup kreditov" : "Registrovať sa"
-  };
+export const DescrAndButton: FC<IProps> = ({ isLoggedIn = false }) => {
+  const descriptionText = isLoggedIn
+    ? "Pri viacmesačnom predpladtnom zľava až 20%"
+    : "Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.";
+
+  const buttonText = isLoggedIn ? "Nákup kreditov" : "Registrovať sa";
   return (
     <div>
       <Description>{descriptionText}</Description>
-      <span className="bg-white p-16">
+      <span className="bg-white p-16 leading-1">
         <Button isInverted>{buttonText}</Button>
       </span>
     </div>

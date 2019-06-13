@@ -4,7 +4,6 @@ import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
 import { DescrAndButton } from "../Description/DescrAndButton";
-import { BackgroundImage } from "./BackgroundImage";
 import { NewestArticles } from "./NewestArticles";
 
 export const LandingPageWrapper = () => {
