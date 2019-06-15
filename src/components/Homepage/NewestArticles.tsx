@@ -7,7 +7,7 @@ import { ArticleWrapper, IArticle } from "./ArticleWrapper";
 interface IArticleBackendVersion {
   id: number;
   heading: string;
-  insight: string;
+  cropped_insight: string;
   title_photo: string;
 }
 
@@ -18,12 +18,12 @@ export const NewestArticles = () => {
   const renamePhotoProperty = ({
     id,
     heading,
-    insight,
+    cropped_insight,
     title_photo
   }: IArticleBackendVersion): IArticle => ({
     id,
     heading,
-    insight,
+    croppedInsight: cropped_insight,
     titlePhoto: title_photo
   });
   useEffect(() => {
