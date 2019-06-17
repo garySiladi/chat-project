@@ -10,7 +10,6 @@ import Facebook from "../../static/svg/facebook-square.svg";
 
 const OverflowOvals = styled.div`
   position: absolute;
-  overflow: hidden;
   width: 293px;
   height: 489px;
   right: 0;
@@ -18,13 +17,11 @@ const OverflowOvals = styled.div`
 
 export const Footer: FC = () => (
   <div className="flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
-    <div className="flex lg:social-icons sm:social-icons social-icons">
-      <div className="w-48 mr-4">
+    <div className="flex social-icons social-icons lg:social-icons">
+      <div className="flex flex-row mr-4">
         <a href="">
           <Icon src={Facebook} className="w-40" />
         </a>
-      </div>
-      <div className="w-48 ml-4">
         <a href="">
           <Icon src={Instagram} className="w-40" />
         </a>
@@ -36,14 +33,14 @@ export const Footer: FC = () => (
         <div className="pb-24 pr-32">
           <Info />
         </div>
-        <div className="sm:flex pt-24 pb-48">
+        <div className="sm:flex pb-48 lg:pt-24">
           <Location />
           <Contacts />
         </div>
       </div>
     </div>
     <OverflowOvals>
-      <div className="z-0 bg-oval sm:bg-oval lg:bg-oval" />
+      <div className="z-0 bg-oval lg:bg-oval" />
     </OverflowOvals>
   </div>
 );
