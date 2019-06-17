@@ -5,6 +5,7 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header";
+import { Schedule } from "../components/Schedule";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
 import { ThumbnailTherapy } from "../components/Thumbnail/ThumbnailTherapy";
@@ -15,6 +16,7 @@ import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import { Container } from "../components/ArticlesCollection/Container";
+import { ProgressBar } from "../components/Schedule/ProgressBar";
 import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
 import "../style/fonts.css";
@@ -47,6 +49,7 @@ storiesOf("Popups", module)
   .add("ErrorPopup", () => <ErrorPopup />);
 
 storiesOf("Header", module).add("Header", () => <Header />);
+storiesOf("Schedule", module).add("Schedule", () => <Schedule />);
 
 storiesOf("Thumbnail", module)
   .add("Therapy", () => (
@@ -74,9 +77,19 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
+<<<<<<< HEAD
 storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
   <Container />
 ));
+=======
+
+storiesOf("ProgressBar", module)
+  .add("ProgressBar", () => <ProgressBar actual={1} max={6} />)
+  .add("ProgressBar empty", () => <ProgressBar actual={0} max={6} />)
+  .add("ProgressBar half", () => <ProgressBar actual={3} max={6} />)
+  .add("ProgressBar full", () => <ProgressBar actual={6} max={6} />);
+
+>>>>>>> master
 storiesOf("ChatInfo", module).add("ChatInfo", () => (
   <div className="bg-blue">
     <ChatInfo />
