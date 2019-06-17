@@ -57,7 +57,3 @@
 .userProfileLinks {
   @apply font-lato no-underline text-black text-12;
 }
-
-.descriptionLineHeight {
-  @apply leading-57
-}

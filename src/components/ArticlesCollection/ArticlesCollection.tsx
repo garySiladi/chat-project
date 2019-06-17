@@ -1,5 +1,5 @@
 import React from "react";
-import { Thumbnail } from "../Thumbnail/Thumbnail";
+import { ThumbnailArticle } from "../Thumbnail/ThumbnailArticle";
 import homer from "../../static/svg/homer.svg";
 import { Button } from "../Button";
 
@@ -39,7 +39,8 @@ export const ArticlesCollection = () => {
       <div className="bg-white flex flex-wrap">
         {article.map(({ icon, name, description, alt }) => (
           <div key={name} className="p-4 md:w-1/2 lg:w-1/3">
-            <Thumbnail
+            <ThumbnailArticle
+              date="1.1.2010"
               icon={icon}
               name={name}
               description={description}
