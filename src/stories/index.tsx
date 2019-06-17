@@ -7,13 +7,15 @@ import { CancelReservationPopup } from "../components/Popup/Storybook/CancelRese
 import { Header } from "../components/Header";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
+import { ThumbnailTherapy } from "../components/Thumbnail/ThumbnailTherapy";
+import { ThumbnailArticle } from "../components/Thumbnail/ThumbnailArticle";
 import icon from "../static/svg/homer.svg";
-import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
 import { Container } from "../components/ArticlesCollection/Container";
+import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -46,14 +48,24 @@ storiesOf("Popups", module)
 
 storiesOf("Header", module).add("Header", () => <Header />);
 
-storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
-  <Thumbnail
-    name="MAMA CHAT"
-    icon={icon}
-    alt="super"
-    description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
-  />
-));
+storiesOf("Thumbnail", module)
+  .add("Therapy", () => (
+    <ThumbnailTherapy
+      alt="super"
+      icon={icon}
+      name="MAMA CHAT"
+      description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+    />
+  ))
+  .add("Article", () => (
+    <ThumbnailArticle
+      date="99.99.9999"
+      alt="super"
+      icon={icon}
+      name="Nazov článku resp. novinky"
+      description='A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of […]'
+    />
+  ));
 
 storiesOf("Home", module).add("Home", () => <Home />);
 
@@ -64,4 +76,9 @@ storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
 ));
 storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
   <Container />
+));
+storiesOf("ChatInfo", module).add("ChatInfo", () => (
+  <div className="bg-blue">
+    <ChatInfo />
+  </div>
 ));
