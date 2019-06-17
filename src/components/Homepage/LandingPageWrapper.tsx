@@ -1,10 +1,10 @@
 import React from "react";
 import { List } from "./List";
-import { Button } from "./Button";
-import { Description } from "./Description";
+import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
-import { DescriptionWrapper } from "./DescriptionWrapper";
-import { BackgroundImage } from "./BackgroundImage";
+import { DescriptionWrapper } from "../Description/DescriptionWrapper";
+import { DescriptionAndButton } from "../Description/DescriptionAndButton";
+
 import { NewestArticles } from "./NewestArticles";
 
 export const LandingPageWrapper = () => {
@@ -22,12 +22,7 @@ export const LandingPageWrapper = () => {
       </DescriptionWrapper>
       <List />
       <DescriptionWrapper>
-        <Description>
-          Vyskúšajte si CHAT. Registrujte sa a získajte prvú hodinu zdarma.
-        </Description>
-        <div className="w-192 m-auto mt-24 bg-black rounded-8">
-          <Button>Registrovať sa</Button>
-        </div>
+        <DescriptionAndButton />
       </DescriptionWrapper>
       <NewestArticles />
     </>

@@ -203,7 +203,8 @@ module.exports = {
       "36": "36px",
       "40": "40px",
       "48": "48px",
-      "50": "50px"
+      "50": "50px",
+      "57": "57px"
     },
     listStyleType: {
       none: "none",
