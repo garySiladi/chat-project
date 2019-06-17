@@ -14,6 +14,7 @@ import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
+import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -71,4 +72,10 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
+));
+
+storiesOf("ChatInfo", module).add("ChatInfo", () => (
+  <div className="bg-blue">
+    <ChatInfo />
+  </div>
 ));
