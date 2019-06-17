@@ -4,7 +4,6 @@ import { AvailabilityBar } from "./AvailabilityBar";
 import { Counter } from "../Schedule/Counter";
 
 interface IProps extends IReservationInfo {
-  id: number;
   attendants: number;
   maxAttendants: number;
 }
