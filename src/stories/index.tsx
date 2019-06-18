@@ -5,14 +5,19 @@ import { ErrorPopup } from "../components/Popup/Storybook/ErrorPopup";
 import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPopup";
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header";
+import { Schedule } from "../components/Schedule";
 import { Home } from "../components/Home";
 import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
+import { ThumbnailTherapy } from "../components/Thumbnail/ThumbnailTherapy";
+import { ThumbnailArticle } from "../components/Thumbnail/ThumbnailArticle";
 import icon from "../static/svg/homer.svg";
-import { Thumbnail } from "../components/Thumbnail/Thumbnail";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
 import { Footer } from "../components/Footer/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
+import { Container } from "../components/ArticlesCollection/Container";
+import { ProgressBar } from "../components/Schedule/ProgressBar";
+import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
 import "../style/fonts.css";
 
@@ -44,15 +49,26 @@ storiesOf("Popups", module)
   .add("ErrorPopup", () => <ErrorPopup />);
 
 storiesOf("Header", module).add("Header", () => <Header />);
+storiesOf("Schedule", module).add("Schedule", () => <Schedule />);
 
-storiesOf("ThumbnailTherapy", module).add("Therapy", () => (
-  <Thumbnail
-    name="MAMA CHAT"
-    icon={icon}
-    alt="super"
-    description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
-  />
-));
+storiesOf("Thumbnail", module)
+  .add("Therapy", () => (
+    <ThumbnailTherapy
+      alt="super"
+      icon={icon}
+      name="MAMA CHAT"
+      description="Kreatívne a uvoľnujúce aktivity, aby ste si oddýchli, spracovali emócie […]"
+    />
+  ))
+  .add("Article", () => (
+    <ThumbnailArticle
+      date="99.99.9999"
+      alt="super"
+      icon={icon}
+      name="Nazov článku resp. novinky"
+      description='A paragraph (from the Greek paragraphos, "to write beside" or "written beside") is a self-contained unit of […]'
+    />
+  ));
 
 storiesOf("Home", module).add("Home", () => <Home />);
 
@@ -60,4 +76,20 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
+));
+
+storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
+  <Container />
+));
+
+storiesOf("ProgressBar", module)
+  .add("ProgressBar", () => <ProgressBar actual={1} max={6} />)
+  .add("ProgressBar empty", () => <ProgressBar actual={0} max={6} />)
+  .add("ProgressBar half", () => <ProgressBar actual={3} max={6} />)
+  .add("ProgressBar full", () => <ProgressBar actual={6} max={6} />);
+
+storiesOf("ChatInfo", module).add("ChatInfo", () => (
+  <div className="bg-blue">
+    <ChatInfo />
+  </div>
 ));
