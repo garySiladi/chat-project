@@ -77,11 +77,10 @@ storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
-<<<<<<< HEAD
+
 storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
   <Container />
 ));
-=======
 
 storiesOf("ProgressBar", module)
   .add("ProgressBar", () => <ProgressBar actual={1} max={6} />)
@@ -89,7 +88,6 @@ storiesOf("ProgressBar", module)
   .add("ProgressBar half", () => <ProgressBar actual={3} max={6} />)
   .add("ProgressBar full", () => <ProgressBar actual={6} max={6} />);
 
->>>>>>> master
 storiesOf("ChatInfo", module).add("ChatInfo", () => (
   <div className="bg-blue">
     <ChatInfo />
