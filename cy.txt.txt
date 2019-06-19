@@ -1,0 +1,162 @@
+Pripojenie na web
+
+
+
+
+
+ODHLASENY!!
+Header
+
+done 1Kliknutie na Arteterapie page swap
+
+done 2-..- Rozvrh page swap
+
+done 3-..- Clanky swap
+
+done 4Pocas na stranke Rozvrh, click na logo Chat.. vratenie na MP
+
+done 5. After click on login/register show popup
+
+done 6 after point 5 click on prihlasit
+
+7 after point 5 click on input Email
+7a-..- input jankohrasko and press prihlasit
+7b. -..- input peter@peter.peter and press login
+7c. -..- input peter@gmail.com and press login
+7d. uppercase PETER@PETER.com
+7e. @gmail.com
+7f. PeTeR@GmAiL.CoM
+
+8. after point 5 click on input Password
+8a. -..- input samuraj123 and press login
+8b. -..- input nothing and press login
+8c. 
+
+9. input together login and pasword correct and press login
+9a. - both inputs are blank
+9b. -..- false and press login
+
+10 after correct 9 redirect to MP and should see Name, Icon, Credit
+
+11. will be named PROFILE down.
+
+12. Forgot password ... not shoed on marvel
+
+13. Facebook login ... not showed on marvel
+
+14. after point 5 press Register...
+14a. press facebook button ... not showed on marvel
+14b. input correct Email, name, surname, password, re-password (im not a robot) let checkbox unchecked and press register.
+14c. correct --..-- press checkbox without (im not a robot) and press register.
+14d. input incorrect Email(janko123.sk) and everything correct and press register.
+14e. put blank everything except checkbox with robot and press register.
+14f. input all data correct except re-password.
+14g. input correct all data and press register.
+14h. press on "Vseobecne podmienky".
+14i. press on "Pravidla spracovania"
+14j. press on Prihláste sa
+14k. press background
+
+MAIN PAGE = MP
+ 
+15. after click on "Vsetky nase arteterapie" you should be redirect to Arteterapie and you should see black "Vsetko" and all arteterapies
+15a. after click on "Pre deti do 3 rokov" -..- black "Pre deti do 3 rokov" and only kids arteterapie
+15b. after click on "Pre deti od 4 do 12 rokov" -..- black "Pre deti od 4 do 12 rokov" and only 4-12 years
+15c. after click on "Pre dospelych" -..- black "Pre dospelych" and only for adults arteterapies
+15d. after click on "individual" -..- ....
+
+16. click Registrovat sa point 14...
+
+17. click on všetky clanky, zobrazia sa všetky clanky
+17a. po kliknuti na zobrazit clanok sa zobrazí daný clánok
+17b . pokracuje na header Clanok
+
+
+18. clicknutie na hrefka
+18a. klik na fb iconu premiestni nas na fb stranku
+18b. instagram na instagram
+18c. na mail zacneme pisat mail
+18d. kliknutie na sipku hore, nas da na zaciatok page
+
+Arteterapie= At
+
+19. po kliknuti zobrazi sa stranka arteterapie
+19a. prednastavene (vsetko) ak klikneme na inu napr (pre dospelych) zobrazia sa len pre dospelych
+19b. -_- to iste len pre deti od 3 rokov
+19c. -_- to iste len pre deti od 4do 12 rokov
+19d. po od 4do 12 rokov klikneme na vsetko ci ukaze vsetky terapie
+19e. po kliknutie na od 3 rokov klikneme na listu header ci sa zmeni
+
+20. po kliknuti na terapiu zobrazit viac.
+20a. zobrazi sa nazov terapie a podrobnosti
+20b. po kliknuti na zobrazit rozvrh sa otvori rozvrh header ... riesenie neskor
+20c. nizsie kliknut pridat hodnotenie, mala by sa otvorit ... ?
+20d. registracia riesena
+20e. ikonky riesene href
+
+ROZVRH HEADER
+
+Zahrnuje aj ak je PRIHLASENY
+
+21. po kliknuti na vsetky Chat arteterapie zobrazi "checkbox list"
+21a. po vyklikani urcitych checkboxov posle len tie vyklikane
+
+22. po kliknuti na moj rozvrh sa preklikne a ukaze vybrane terapie KROK 24
+22a. ak nie su ukazane, ukazuje prihlasit sa, 
+22b. po kliknuti na prihlasenie sa zobrazi login popup postup 5.
+22c. moj rozvrh prazdny 
+22d. po kliknuti na profil a odhlasit vrati na main page
+22e. pocas prihlasenia ak klikneme na pocet miest, mali by sa menit
+22f. po 22e stlacime rezervovat vyskoci popup
+22g. po 22f stlacime potvrdit a presmeruje nas to na naš rozvrh
+22h. po 22f stlacime stlacime background, malo by n as to vratit na rozvrh
+22i. po 22f stlacime x button a popup by sa mal zavriet
+
+23. skontrolovat ci po objednani poctu miest sa obsadenost pripocita
+23a. po stlaceni - sa odcita nas pocet miest
+23b. po stlaceni + sa pripocita nas pocet miest
+23c ak je pocet miest 8 a stlacime rezervovat ci sa nam potvrdi
+23d. ak je pocet miest 0 a stlacime rezervovat ci sa nam potvrdi
+23e. ci je mozne ist -2 a rezervovat
+23f ci je mozne ist 20 a rezervovat
+23g. ci je mozne iba stlacit rezervovat
+23h. ci sa da rezervovat ak je 8/8
+
+
+24. ak sme vykonali 22. a potvrdili v rozvrhu by sa malo ukazovat na poli zmenit rezervaciu, zrusit rezervaciu
+24a. po kliknuti na zmenit rezervaciu vyskoci ... ?
+24b po kliknuti na zrusit rezervaciu vyskoci popup
+24c po 23b co sa nam zobrazi popup stlacime zrusit a peniaze nam vrati na ucet
+24d po 23b -_- stlacime na background ocitneme sa na Rozvrh
+24e po 23b -_- stlacime na button x a vrati nas to na Rozvrh
+
+25a. skusit rezervovat 2terapie naraz v rozne dni
+25b. skusit rezervovat 2 terapie v ten isty den ked casy oboch su rovnake 16:00 / 16:00
+
+26. ak sme objednani na terapiu kliknut na 3 bodky za ikonami ci nam ukaze vsetkych
+
+27.po kliknuti na nacitat dalsie by malo zobrazit dalsie terapie
+
+28a. Registracia riesena
+28b. icony riesene
+28c. button sipka hore riesena
+
+Clanky HEADER
+
+29. Niekolko clankov sa zobrazi
+
+30. po kliknuti na 3ti clanok zobrazit viac sa zobrazi cely clanok
+30a. po predchadzajucom bode 30 spustime video a pokusime sa cliknut na prihlasenie 
+30b. -_- klikneme na pridat komentar .... ?
+30c. ak sme na spodku clanku klikneme na CHAT logo v headeri, vrati nas to na main page
+30d. ak sme na spodku stranky klikneme na header Clanky
+
+31.dalsie clanky a by sa mali zobrazit
+
+
+32a. ikonky riesene
+32b. back to top riesene
+
+
+
+
