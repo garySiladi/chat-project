@@ -1,5 +1,5 @@
 describe("Header Tests", () => {
-  it("Swap Page from Rozvrh to Main Page", () => {
+  it("Redirect from Rozvrh Page to Main Page", () => {
     cy.visit("/Rozvrh");
     cy.get("[data-cy='Header-logo']")
       .click()

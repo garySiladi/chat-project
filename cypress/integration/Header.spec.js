@@ -4,25 +4,25 @@ context("Web connection", () => {
   });
 
   describe("Header Tests", () => {
-    it("Swap Page to Artheterapie", () => {
+    it("Redirect from Main Page to Artheterapie", () => {
       cy.get("[data-cy=header]")
         .contains("Arteterapie")
         .click();
     });
 
-    it("Swap Page to Rozvrh", () => {
+    it("Redirect from Main Page to Rozvrh", () => {
       cy.get("[data-cy=header]")
         .contains("Rozvrh")
         .click();
     });
 
-    it("Swap Page to Články", () => {
+    it("Redirect from Main Page to Články", () => {
       cy.get("[data-cy=header]")
         .contains("Články")
         .click();
     });
 
-    it("Login/Register", () => {
+    it("Click on Header Button Login/Register", () => {
       cy.get("[data-cy='Header-Login/Register']").click();
       cy.get('[data-cy="PopUp-Login/Register"]').should("exist");
     });
