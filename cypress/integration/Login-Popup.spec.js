@@ -17,7 +17,7 @@ describe("Login Tests", () => {
       .should("[data-cy=EmailInput]");
   });
 
-  it("accept input", () => {
+  it("accept input Email", () => {
     cy.visit("/PopupRegisterLogin");
     cy.get("[data-cy=EmailInput]")
       .type("jankohrasko")
