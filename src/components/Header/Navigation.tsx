@@ -4,15 +4,15 @@ import { Link } from "@reach/router";
 const links = [
   {
     title: "Arteterapie",
-    to: "#"
+    to: "/Arteterapie"
   },
   {
     title: "Rozvrh",
-    to: "#"
+    to: "/Rozvrh"
   },
   {
     title: "Články",
-    to: "#"
+    to: "/Clanky"
   }
 ];
 
@@ -23,6 +23,7 @@ export const Navigation = () => (
         key={title}
         to={to}
         className="link pl-32 pr-32 pt-8  border-b-4 border-solid border-white hover:border-maize"
+        data-cy={`Header navigation-${title}`}
       >
         {title}
       </Link>
