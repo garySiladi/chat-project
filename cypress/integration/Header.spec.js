@@ -2,24 +2,26 @@ context("Web connection", () => {
   beforeEach(() => {
     cy.visit("/");
   });
-
   describe("Header Tests", () => {
     it("Redirect from Main Page to Artheterapie", () => {
       cy.get("[data-cy=header]")
         .contains("Arteterapie")
-        .click();
+        .click()
+        .visit("/Arteterapie");
     });
 
     it("Redirect from Main Page to Rozvrh", () => {
       cy.get("[data-cy=header]")
         .contains("Rozvrh")
-        .click();
+        .click()
+        .visit("/Rozvrh");
     });
 
     it("Redirect from Main Page to Články", () => {
       cy.get("[data-cy=header]")
         .contains("Články")
-        .click();
+        .click()
+        .visit("/Články");
     });
 
     it("Click on Header Button Login/Register", () => {
