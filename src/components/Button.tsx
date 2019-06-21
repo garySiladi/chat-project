@@ -16,6 +16,7 @@ export const Button: FC<IProps> = ({
   onClick
 }) => (
   <button
+    data-cy="buttonReservation"
     onClick={onClick}
     className={classnames(
       "h-40 font-lato text-16 hover:shadow-lg active:opacity-50 font-bold border-solid border border-black rounded-12",

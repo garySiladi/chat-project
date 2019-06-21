@@ -25,17 +25,29 @@ export const ReservationInfo: FC<IReservationInfo> = ({
       <div className="ml-8 mt-px">{name}</div>
     </div>
     <div className="flex flex-row items-center font-lato text-12">
-      <div className="text-grey border-solid p-4 pr-8 border-lilac border-r ml-54">
+      <div
+        data-cy="Terapeut"
+        className="text-grey border-solid p-4 pr-8 border-lilac border-r ml-54"
+      >
         Terapeut {therapeutName}
       </div>
-      <div className="ml-8 text-grey">Miestnosť č.{room}</div>
+      <div data-cy="Room" className="ml-8 text-grey">
+        Miestnosť č.{room}
+      </div>
     </div>
     <div className="flex flex-row items-center">
-      <div className="mt-px text-12 font-lato text-grey border-solid p-4 pr-4 border-lilac border-r ml-54">
+      <div
+        data-cy="TimeLength"
+        className="mt-px text-12 font-lato text-grey border-solid p-4 pr-4 border-lilac border-r ml-54"
+      >
         {timeLength} minút
       </div>
-      <div className="mt-px mx-4 text-12 font-lato text-grey">Cena:</div>
-      <div className="mt-px ml-4 text-18 font-gilbert">{price}€</div>
+      <div data-cy="Price" className="mt-px mx-4 text-12 font-lato text-grey">
+        Cena:
+      </div>
+      <div data-cy="Euro" className="mt-px ml-4 text-18 font-gilbert">
+        {price}€
+      </div>
     </div>
   </div>
 );

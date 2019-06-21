@@ -10,18 +10,23 @@ export const Counter = () => {
   const decrement = () => setCounter(counter - 1);
   return (
     <>
-      <div className="pt-16 text-12 font-lato font-bold">Počet miest</div>
+      <div
+        data-cy="NumberOfPlaces"
+        className="pt-16 text-12 font-lato font-bold"
+      >
+        Počet miest
+      </div>
       <div className="pt-4 flex">
         <div className="flex justify-start">
-          <div className="w-40 h-40 mr-4">
+          <div className="w-40 h-40 mr-4" data-cy="buttonDecrement">
             <Button onClick={decrement} isStretched>
               <Icon src={minusIcon} className="mx-auto" />
             </Button>
           </div>
-          <div className="h-40 w-40 lg:w-80 mr-4">
+          <div data-cy="Counter" className="h-40 w-40 lg:w-80 mr-4">
             <Button isStretched>{counter}</Button>
           </div>
-          <div className="w-40 h-40 mr-4">
+          <div className="w-40 h-40 mr-4" data-cy="buttonIncrement">
             <Button onClick={increment} isStretched>
               <Icon src={plusIcon} className="mx-auto" />
             </Button>

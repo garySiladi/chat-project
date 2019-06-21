@@ -11,7 +11,10 @@ export const AvailabilityBar: FC<IProps> = ({
   maxReservation
 }) => (
   <>
-    <div className="flex justify-between lg:pt-20 pt-8 text-12 font-lato font-bold">
+    <div
+      data-cy="Availability"
+      className="flex justify-between lg:pt-20 pt-8 text-12 font-lato font-bold"
+    >
       <div>Obsadenosť</div>
       <div>
         <span>{currentReservation}/</span>
