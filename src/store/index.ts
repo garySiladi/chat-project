@@ -1,11 +1,10 @@
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
-
-import { counterReducer } from "./counter/reducers";
+import { userReducer } from "./user/reducers";
 
 const rootReducer = combineReducers({
-  counter: counterReducer
+  user: userReducer
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

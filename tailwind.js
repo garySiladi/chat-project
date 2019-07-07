@@ -11,7 +11,6 @@ module.exports = {
     },
     colors: {
       transparent: "transparent",
-
       black: "#333333",
       blue: "#00b5e2",
       green: "#00c65e",
@@ -391,5 +390,9 @@ module.exports = {
     zIndex: ["responsive"]
   },
   corePlugins: {},
-  plugins: []
+  plugins: [
+    require("tailwindcss-transition")({
+      standard: "all .3s ease-in"
+    })
+  ]
 };

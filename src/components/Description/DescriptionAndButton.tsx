@@ -15,8 +15,13 @@ export const DescriptionAndButton: FC<IProps> = ({ isLoggedIn = false }) => {
   return (
     <div>
       <Description>{descriptionText}</Description>
-      <span className="bg-white p-16 leading-1">
-        <Button isInverted>{buttonText}</Button>
+      <span
+        className="bg-white p-16 leading-1 inline-block relative"
+        style={{ transform: "rotate(1deg)", top: "-10" }}
+      >
+        <div style={{ transform: "rotate(-1deg)" }}>
+          <Button isInverted>{buttonText}</Button>
+        </div>
       </span>
     </div>
   );

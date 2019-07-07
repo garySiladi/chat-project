@@ -1,36 +1,40 @@
 import React, { useState } from "react";
-import chatImg from "../../static/svg/chatLogo.png";
+import { Link } from "@reach/router";
 import { Menu } from "./Menu";
 import { ImageHeader } from "./ImageHeader";
 import { Navigation } from "./Navigation";
 import { UserProfile } from "./UserProfile";
 import { HamburgerMenu } from "./HamburgerMenu";
-import closeImg from "../../static/svg/closeImg.svg";
 import { UserDropdownMenu } from "./UserDropdownMenu";
+import { TopSlideAnimation } from "../../style/animations";
+import chatImg from "../../static/svg/chatLogo.png";
+import closeImg from "../../static/svg/closeImg.svg";
 
 export const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
   const [openUserProfile, setUserProfile] = useState(false);
   return (
-    <div>
-      {openMenu && (
-        <>
-          <div className="lg:hidden bg-white z-50 absolute w-full">
-            <div className="flex justify-end mr-24 mt-16">
-              <div onClick={() => setOpenMenu(false)}>
-                <ImageHeader src={closeImg} />
+    <div className="sticky z-10 bg-white top-0">
+      <TopSlideAnimation>
+        {openMenu && (
+          <>
+            <div className="lg:hidden bg-white z-50 absolute w-full">
+              <div className="flex justify-end mr-24 mt-16">
+                <div onClick={() => setOpenMenu(false)}>
+                  <ImageHeader src={closeImg} />
+                </div>
+              </div>
+              <div className="z-50">
+                <HamburgerMenu />
               </div>
             </div>
-            <div className="z-50">
-              <HamburgerMenu />
-            </div>
-          </div>
-          <div
-            className="lg:hidden opacity-75 z-20 bg-darkblue fixed h-full w-full inset-0 lg:hidden"
-            onClick={() => setOpenMenu(false)}
-          />
-        </>
-      )}
+            <div
+              className="lg:hidden opacity-75 z-20 bg-darkblue fixed h-full w-full inset-0 lg:hidden"
+              onClick={() => setOpenMenu(false)}
+            />
+          </>
+        )}
+      </TopSlideAnimation>
 
       {openUserProfile && (
         <div className="lg:hidden">
@@ -52,14 +56,15 @@ export const Header = () => {
           />
         </div>
       )}
-
       <div
         data-cy="header"
         className="flex justify-between items-center content-center h-64 lg:h-48 w-full"
       >
         <Menu onClick={() => setOpenMenu(true)} />
         <div className="lg:w-192">
-          <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
+          <Link to="/">
+            <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
+          </Link>
         </div>
         <Navigation />
         <UserProfile onClick={() => setUserProfile(true)} />

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import icon from "../../static/svg/homer.svg";
 import { NewestArticlesWrapper } from "./NewestArticlesWrapper";
 import { backendHostname } from "../../RoutesConfig";
 import { ArticleWrapper, IArticle } from "./ArticleWrapper";
@@ -27,7 +26,7 @@ export const NewestArticles = () => {
     titlePhoto: title_photo
   });
   useEffect(() => {
-    fetch(`${backendHostname}/article/newest`)
+    fetch(`http://localhost:3000/articles?_page=1&_limit=3`)
       .then(response => response.json())
       .then(response => setArticles(response.map(renamePhotoProperty)))
       .catch(error => setLoadingError(true));

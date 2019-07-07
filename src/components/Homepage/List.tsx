@@ -1,5 +1,5 @@
 import React from "react";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { Icon } from "./Icon";
 import smallChildrenIcon from "../../static/svg/icon-therapy-type-deti-do-3-rokov.svg";
 import childrenIcon from "../../static/svg/icon-therapy-type-deti-4-15.svg";
@@ -11,9 +11,9 @@ import pinkOval from "../../static/svg/pinkOval.svg";
 import greenOval from "../../static/svg/greenOval.svg";
 
 export const List = () => (
-  <div className="flex flex-col items-center m-0 bg-white relative p-24 lg:m-48 text-center">
+  <div className="flex flex-col items-center m-0 bg-white shadow-md relative p-24 lg:m-48 text-center text-black">
     <h1 className="font-gilbert text-31">Arteterapie</h1>
-    <div className="pt-24 pb-32 font-lato font-normal lg:w-3/4">
+    <div className="pt-24 pb-32 font-lato font-normal leading-22 lg:w-3/4">
       Naše arteterapie sú vhodné pre deti, mládež ale aj dospelých so zdravotným
       znevýhodnením, problémami v učení, s poruchami správania alebo pre tých čo
       trpia traumami, stratami, smútkom, depresiou alebo vyhorením. Arteterapie
@@ -40,10 +40,6 @@ export const List = () => (
         url={greenOval}
       />
     </div>
-    <div className="w-256 mt-20 border border-solid rounded-8 bg-white">
-      <Button className="text-black font-lato font-bold">
-        Všetky naše arteterapie
-      </Button>
-    </div>
+    <Button className="mt-32">Všetky naše arteterapie</Button>
   </div>
 );

@@ -22,7 +22,7 @@ export const TextBackground: FC<IProps> = ({
   top,
   children
 }) => (
-  <div className="relative">
+  <div className="relative inline-block">
     <div
       className="relative bg-white"
       style={{

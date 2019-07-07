@@ -2,7 +2,7 @@ import React, { FC } from "react";
 import { Button } from "../Button";
 
 export const NewestArticlesWrapper: FC = ({ children }) => (
-  <div className="m-0 bg-white relative pt-48 lg:pt-24 lg:m-48 text-center pl-32 pr-32 lg:pl-128 lg:pr-128 shadow">
+  <div className="m-0 bg-white relative pt-48 lg:pt-24 lg:m-48 shadow-md text-center text-black pl-32 pr-32 lg:pl-128 lg:pr-128 shadow">
     <h1 className="font-gilbert text-31 mb-16">Najnovšie články</h1>
     <div className="flex flex-col items-center justify-center lg:flex-row">
       {children}

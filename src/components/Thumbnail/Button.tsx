@@ -7,6 +7,7 @@ interface IProps {
 
 export const Button: FC<IProps> = ({ children, className }) => (
   <button
+    style={{ transition: "all .2s ease" }}
     className={classnames(
       "rounded-12 w-full h-40 font-black text-16 hover:text-white hover:bg-black text-black",
       className

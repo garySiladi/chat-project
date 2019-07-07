@@ -1,5 +1,4 @@
 import React from "react";
-import backgroundImage from "../../static/svg/backgroundImage.svg";
 import { Article } from "./Article";
 import articleImage from "../../static/svg/articleImage.png";
 import { ImageHeader } from "../Header/ImageHeader";
@@ -18,7 +17,7 @@ export const ArticleContainer = () => {
   };
 
   return (
-    <BackgroundImage url={backgroundImage} isCover>
+    <BackgroundImage>
       <div className="p-24">
         <div className="bg-white">
           <ImageHeader

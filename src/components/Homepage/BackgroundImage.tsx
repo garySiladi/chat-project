@@ -1,10 +1,5 @@
-import styled from "@emotion/styled";
+import React, { FC } from "react";
 
-interface IProps {
-  url: string;
-  isCover?: boolean;
-}
-export const BackgroundImage = styled.div<IProps>`
-  background: url(${props => props.url}) no-repeat center;
-  background-size: ${({ isCover }) => (isCover ? "cover" : "auto")};
-`;
+export const BackgroundImage: FC = ({ children }) => (
+  <div className="page-background">{children}</div>
+);

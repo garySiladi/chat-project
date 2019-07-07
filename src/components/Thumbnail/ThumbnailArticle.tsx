@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { Button } from "./Button";
+import { Button } from "../Button";
 import { Description } from "./Description";
 import { Image } from "./Image";
 import { Name } from "./Name";
@@ -21,13 +21,18 @@ export const ThumbnailArticle: FC<IProps> = ({
   icon,
   alt
 }) => (
-  <Thumbnail className="w-238 h-408 border border-solid border-lilac">
-    <Image icon={icon} alt={alt} className="mb-8 w-full h-166" />
+  <Thumbnail>
+    <Image icon={icon} alt={alt} className="mb-8 w-full h-166 object-cover" />
     <Date className="mb-4 h-12">{date}</Date>
-    <Name className="font-lato mb-8 leading-22">{name}</Name>
-    <Description className="text-16 leading-22 mb-12 h-86">
+    <Name className="font-lato mb-24 leading-22">{name}</Name>
+    <Description className="text-16 leading-22 mb-12">
       {description}
     </Description>
-    <Button className="mb-8">Zobraziť článok</Button>
+    <Button className="mb-2 lg:hidden" isStretched isInverted isSlim>
+      Zobraziť článok
+    </Button>
+    <Button className="mb-2 hidden lg:inline-block border-none" isStretched>
+      Zobraziť článok
+    </Button>
   </Thumbnail>
 );

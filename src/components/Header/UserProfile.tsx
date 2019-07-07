@@ -12,11 +12,11 @@ interface IProps {
 export const UserProfile: FC<IProps> = ({ onClick }) => (
   <div className="group relative" onClick={onClick}>
     <div className="flex flex-row w-auto lg:mr-40 w-192 inline-block cursor-pointer">
-      <div className="w-32 h-32 rounded-8 mr-16 flex items-center justify-center bg-lilac">
+      <div className="w-40 h-40 lg:h-32 lg:w-32 rounded-8 mr-16 flex items-center justify-center bg-lilac">
         <UserIcon credentials="FS" />
         <ImageHeader
           src={userIcon}
-          className="flex flex-row h-16 w-16 lg:hidden"
+          className="flex flex-row h-24 w-24 lg:hidden"
         />
       </div>
       <UserInfo name="Feri Schwartzeneger" kredit={10} />

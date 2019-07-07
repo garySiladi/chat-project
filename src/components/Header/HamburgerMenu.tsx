@@ -27,10 +27,9 @@ export const HamburgerMenu = () => (
         <Link
           key={title}
           to={to}
-          className="bg-white font-lato font-bold text-black text-21 no-underline"
+          className="hamburger-item bg-white font-lato font-bold text-black text-21 py-16 border-solid border-lilac no-underline border-b"
         >
           {title}
-          <div className="bg-lilac mt-16 mb-16 h-px" />
         </Link>
       ))}
     </div>

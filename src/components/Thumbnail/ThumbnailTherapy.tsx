@@ -1,9 +1,9 @@
 import React, { FC } from "react";
-import { Button } from "./Button";
 import { Description } from "./Description";
 import { Image } from "./Image";
 import { Name } from "./Name";
 import { Thumbnail } from "./Thumbnail";
+import { Button } from "../Button";
 
 interface IProps {
   name: string;

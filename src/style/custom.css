@@ -50,10 +50,26 @@
   }
 }
 
+.page-background {
+  background: url("../static/svg/backgroundImage.svg") repeat-y 0 0;
+  background-size: contain;
+}
+
+@screen md {
+  .page-background {
+    background: url("../static/svg/backgroundImage.svg") repeat-y 0 30vh;
+    background-size: contain;
+  }
+}
+
 .link {
   @apply font-gilbert no-underline inline-block font-bold text-16 text-black;
 }
 
 .userProfileLinks {
   @apply font-lato no-underline text-black text-12;
+}
+
+.hamburger-item:last-of-type {
+  @apply border-none;
 }
