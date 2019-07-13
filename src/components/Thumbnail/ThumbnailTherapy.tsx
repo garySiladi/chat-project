@@ -1,25 +1,19 @@
 import React, { FC } from "react";
 import { Description } from "./Description";
-import { Image } from "./Image";
+import { Image } from "../Image";
 import { Name } from "./Name";
-import { Thumbnail } from "./Thumbnail";
+import { Thumbnail, IThumbnailProps } from "./Thumbnail";
 import { Button } from "../Button";
 
-interface IProps {
-  name: string;
-  description: string;
-  alt: string;
-  icon: string;
-}
-
-export const ThumbnailTherapy: FC<IProps> = ({
+export const ThumbnailTherapy: FC<IThumbnailProps> = ({
   name,
   description,
   icon,
-  alt
+  alt,
+  to
 }) => (
-  <Thumbnail className="w-238 h-304 shadow">
-    <Image icon={icon} alt={alt} className="mb-8 w-full h-160" />
+  <Thumbnail to={to} className="w-238 h-304 shadow">
+    <Image src={icon} alt={alt} className="mb-8 w-full h-160" />
     <Name className="font-gilbert h-28">{name}</Name>
     <Description className="mb-16 text-12 leading-18 h-36">
       {description}

@@ -11,7 +11,7 @@ import pinkOval from "../../static/svg/pinkOval.svg";
 import greenOval from "../../static/svg/greenOval.svg";
 
 export const List = () => (
-  <div className="flex flex-col items-center m-0 bg-white shadow-md relative p-24 lg:m-48 text-center text-black">
+  <div className="flex flex-col items-center m-0 bg-white shadow-2xl relative p-24 lg:m-48 text-center text-black">
     <h1 className="font-gilbert text-31">Arteterapie</h1>
     <div className="pt-24 pb-32 font-lato font-normal leading-22 lg:w-3/4">
       Naše arteterapie sú vhodné pre deti, mládež ale aj dospelých so zdravotným

@@ -9,10 +9,6 @@
   transition: top 200ms ease-in;
 }
 
-/* .fade-transition-enter-active {
-  top: 0;
-} */
-
 .scale-animation:hover {
   animation: scaleAnimation 1s ease-in-out infinite;
 }

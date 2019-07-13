@@ -6,16 +6,16 @@ import { RegistrationPopup } from "../components/Popup/Storybook/RegistrationPop
 import { CancelReservationPopup } from "../components/Popup/Storybook/CancelReservationPopup";
 import { Header } from "../components/Header";
 import { Schedule } from "../components/Schedule";
-import { Home } from "../components/Home";
-import { ArticleContainer } from "../components/ArticlePage/ArticleContainer";
+import { HomePage } from "../components/HomePage";
+import { ArticlePage } from "../components/ArticlePage";
 import { ThumbnailTherapy } from "../components/Thumbnail/ThumbnailTherapy";
-import { ThumbnailArticle } from "../components/Thumbnail/ThumbnailArticle";
+import { ThumbnailArticleNewest } from "../components/Thumbnail/ThumbnailArticleNewest";
 import icon from "../static/svg/homer.svg";
 import { Button } from "../components/Button";
 import { Input } from "../components/Input";
-import { Footer } from "../components/Footer/Footer";
+import { Footer } from "../components/Footer";
 import { ScheduleFilter } from "../components/ScheduleFilter/ScheduleFilter";
-import { Container } from "../components/ArticlesCollection/Container";
+import { ArticlesCollectionPage } from "../components/ArticlesCollectionPage";
 import { ProgressBar } from "../components/Schedule/ProgressBar";
 import { ChatInfo } from "../components/ChatInfo";
 import "../style/index.css";
@@ -54,6 +54,7 @@ storiesOf("Schedule", module).add("Schedule", () => <Schedule />);
 storiesOf("Thumbnail", module)
   .add("Therapy", () => (
     <ThumbnailTherapy
+      to="/"
       alt="super"
       icon={icon}
       name="MAMA CHAT"
@@ -61,7 +62,8 @@ storiesOf("Thumbnail", module)
     />
   ))
   .add("Article", () => (
-    <ThumbnailArticle
+    <ThumbnailArticleNewest
+      to="/"
       date="99.99.9999"
       alt="super"
       icon={icon}
@@ -70,17 +72,18 @@ storiesOf("Thumbnail", module)
     />
   ));
 
-storiesOf("Home", module).add("Home", () => <Home />);
+storiesOf("HomePage", module).add("HomePage", () => <HomePage />);
 
-storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticleContainer />);
+storiesOf("ArticlePage", module).add("ArticlePage", () => <ArticlePage />);
 
 storiesOf("ScheduleFilter", module).add("ScheduleFilter", () => (
   <ScheduleFilter />
 ));
 
-storiesOf("ArticlesCollection", module).add("ArticlesCollection", () => (
-  <Container />
-));
+storiesOf("ArticlesCollectionPage", module).add(
+  "ArticlesCollectionPage",
+  () => <ArticlesCollectionPage />
+);
 
 storiesOf("ProgressBar", module)
   .add("ProgressBar", () => <ProgressBar actual={1} max={6} />)

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "@reach/router";
 import { Menu } from "./Menu";
-import { ImageHeader } from "./ImageHeader";
+import { Image } from "../Image";
 import { Navigation } from "./Navigation";
 import { UserProfile } from "./UserProfile";
 import { HamburgerMenu } from "./HamburgerMenu";
@@ -21,7 +21,7 @@ export const Header = () => {
             <div className="lg:hidden bg-white z-50 absolute w-full">
               <div className="flex justify-end mr-24 mt-16">
                 <div onClick={() => setOpenMenu(false)}>
-                  <ImageHeader src={closeImg} />
+                  <Image src={closeImg} />
                 </div>
               </div>
               <div className="z-50">
@@ -41,7 +41,7 @@ export const Header = () => {
           <div className="z-50 w-full fixed inset-0">
             <div className="flex justify-end pr-24 pt-16 bg-white">
               <div onClick={() => setUserProfile(false)}>
-                <ImageHeader src={closeImg} />
+                <Image src={closeImg} />
               </div>
             </div>
             <UserDropdownMenu
@@ -63,7 +63,7 @@ export const Header = () => {
         <Menu onClick={() => setOpenMenu(true)} />
         <div className="lg:w-192">
           <Link to="/">
-            <ImageHeader src={chatImg} className="h-24 lg:ml-48" />
+            <Image src={chatImg} className="h-24 lg:ml-48" />
           </Link>
         </div>
         <Navigation />

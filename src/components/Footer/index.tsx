@@ -2,9 +2,10 @@ import React, { FC } from "react";
 import styled from "@emotion/styled";
 import { Logo } from "./Logo";
 import { Info } from "./Info";
-import { Icon } from "../Icon";
+import { Image } from "../Image";
 import { Contacts } from "./Contacts";
 import { Location } from "./Location";
+import { ScaleHoverAnimation } from "../../style/animations";
 import Instagram from "../../static/svg/instagram.svg";
 import Facebook from "../../static/svg/facebook-square.svg";
 
@@ -19,12 +20,16 @@ export const Footer: FC = () => (
   <div className="flex items-end justify-start z-0 bg-cover-image lg:bg-cover-image">
     <div className="flex social-icons social-icons lg:social-icons">
       <div className="flex flex-row mr-4">
-        <a href="">
-          <Icon src={Facebook} className="w-40" />
-        </a>
-        <a href="">
-          <Icon src={Instagram} className="w-40" />
-        </a>
+        <ScaleHoverAnimation>
+          <a href="">
+            <Image src={Facebook} className="w-40" />
+          </a>
+        </ScaleHoverAnimation>
+        <ScaleHoverAnimation>
+          <a href="">
+            <Image src={Instagram} className="w-40" />
+          </a>
+        </ScaleHoverAnimation>
       </div>
     </div>
     <div className="lg:pl-64 z-20">

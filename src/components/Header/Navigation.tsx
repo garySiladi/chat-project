@@ -1,18 +1,18 @@
 import React from "react";
 import { Link } from "@reach/router";
 
-const links = [
+export const links = [
   {
     title: "Arteterapie",
-    to: "#"
+    to: "/arteterapie"
   },
   {
     title: "Rozvrh",
-    to: "#"
+    to: "/rozvrh"
   },
   {
     title: "Články",
-    to: "#"
+    to: "/clanky"
   }
 ];
 

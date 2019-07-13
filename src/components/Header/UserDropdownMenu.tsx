@@ -3,7 +3,7 @@ import { Link } from "@reach/router";
 import euroSign from "../../static/svg/euroSign.svg";
 import idBadge from "../../static/svg/idBadge.svg";
 import powerOff from "../../static/svg/powerOff.svg";
-import { ImageHeader } from "./ImageHeader";
+import { Image } from "../Image";
 
 interface IProps {
   userInicials: string;
@@ -41,7 +41,7 @@ export const UserDropdownMenu: FC<IProps> = ({
     {links.map(({ src, title, to }) => (
       <div key={title}>
         <div className="flex flex-row items-center justify-start ml-24 mt-16">
-          <ImageHeader src={src} />
+          <Image src={src} />
           <Link
             to={to}
             title={title}

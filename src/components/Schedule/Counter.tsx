@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Icon } from "../Icon";
+import { Image } from "../Image";
 import minusIcon from "../../static/svg/minusIcon.svg";
 import plusIcon from "../../static/svg/plusIcon.svg";
 import { Button } from "../Button";
@@ -15,7 +15,7 @@ export const Counter = () => {
         <div className="flex justify-start">
           <div className="w-40 h-40 mr-4">
             <Button onClick={decrement} isStretched>
-              <Icon src={minusIcon} className="mx-auto" />
+              <Image src={minusIcon} className="mx-auto" />
             </Button>
           </div>
           <div className="h-40 w-40 lg:w-80 mr-4">
@@ -23,7 +23,7 @@ export const Counter = () => {
           </div>
           <div className="w-40 h-40 mr-4">
             <Button onClick={increment} isStretched>
-              <Icon src={plusIcon} className="mx-auto" />
+              <Image src={plusIcon} className="mx-auto" />
             </Button>
           </div>
         </div>

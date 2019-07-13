@@ -58,7 +58,12 @@
 @screen md {
   .page-background {
     background: url("../static/svg/backgroundImage.svg") repeat-y 0 30vh;
-    background-size: contain;
+  }
+}
+
+@screen lg {
+  .page-background {
+    background-size: cover;
   }
 }
 

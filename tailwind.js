@@ -132,6 +132,7 @@ module.exports = {
     flex: {
       "1": "1 1 0%",
       auto: "1 1 auto",
+      third: "0 1 33%",
       initial: "0 1 auto",
       none: "none"
     },
@@ -179,10 +180,11 @@ module.exports = {
       full: "100%",
       screen: "100vh"
     }),
-    inset: {
+    inset: theme => ({
       "0": "0",
-      auto: "auto"
-    },
+      auto: "auto",
+      ...theme("spacing")
+    }),
     letterSpacing: {
       tighter: "-0.05em",
       tight: "-0.025em",
@@ -201,6 +203,8 @@ module.exports = {
       "34": "34px",
       "36": "36px",
       "40": "40px",
+      "46": "46px",
+      "47": "47px",
       "48": "48px",
       "50": "50px",
       "57": "57px"
@@ -215,10 +219,11 @@ module.exports = {
       ...theme("spacing"),
       ...negative(theme("spacing"))
     }),
-    maxHeight: {
+    maxHeight: theme => ({
       full: "100%",
-      screen: "100vh"
-    },
+      screen: "100vh",
+      ...theme("spacing")
+    }),
     maxWidth: {
       "320": "320px",
       "480": "480px",
@@ -232,11 +237,12 @@ module.exports = {
       "1600": "1600px",
       full: "100%"
     },
-    minHeight: {
+    minHeight: theme => ({
       "0": "0",
       full: "100%",
-      screen: "100vh"
-    },
+      screen: "100vh",
+      ...theme("spacing")
+    }),
     minWidth: {
       "0": "0",
       full: "100%"
