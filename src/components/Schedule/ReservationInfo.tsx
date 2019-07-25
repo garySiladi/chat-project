@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 export interface IReservationInfo {
-  date: string;
+  date: any;
   name: string;
   therapeutName: string;
   room: string;

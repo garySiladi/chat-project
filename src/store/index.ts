@@ -2,9 +2,17 @@ import { createStore, combineReducers, applyMiddleware } from "redux";
 import thunkMiddleware from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { userReducer } from "./user/reducers";
+import { categoriesReducer } from "./therapyCategories/reducers";
+import { articlesReducer } from "./articles/reducers";
+import { therapiesReducer } from "./therapies/reducers";
+import { scheduleReducer } from "./schedule/reducers";
 
 const rootReducer = combineReducers({
-  user: userReducer
+  user: userReducer,
+  categories: categoriesReducer,
+  articles: articlesReducer,
+  therapies: therapiesReducer,
+  schedule: scheduleReducer
 });
 
 export type AppState = ReturnType<typeof rootReducer>;

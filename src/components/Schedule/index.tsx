@@ -1,45 +1,29 @@
 import React from "react";
+import { connect } from "react-redux";
 import { DayInfoMessage } from "../Schedule/DayInfoMessage";
 import { Reservation } from "./Reservation";
+import { ISchedule } from "src/utils/schedule";
 
-export const Schedule = () => {
-  const data = [
-    {
-      id: 7,
-      attendants: 4,
-      maxAttendants: 8,
-      date: "16:00",
-      price: 10,
-      timeLength: 90,
-      room: "4",
-      therapeutName: "Linda",
-      name: "Kids CHAT"
-    },
-    {
-      id: 6,
-      attendants: 5,
-      maxAttendants: 6,
-      date: "14:00",
-      price: 20,
-      timeLength: 60,
-      room: "6",
-      therapeutName: "Peter",
-      name: "DADY CHAT"
-    }
-  ];
-  return (
-    <div className="shadow-lg m-auto max-w-730">
-      <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
-      <div className="lg:px-24">
-        {data.map(therapy => (
-          <div
-            key={therapy.id}
-            className="border-b border-lilac lg:pb-24 pb-16 px-24"
-          >
-            <Reservation {...therapy} />
-          </div>
-        ))}
-      </div>
+interface IProps {
+  schedule: ISchedule[];
+}
+
+export const ScheduleComponent = ({ schedule }: IProps) => (
+  <div className="shadow-lg m-auto mt-12 bg-white lg:w-730">
+    <DayInfoMessage text="Dnes - Pondelok 23. apríl" />
+    <div className="lg:px-24">
+      {schedule.map((therapy: any) => (
+        <div
+          key={therapy.id}
+          className="border-b border-lilac lg:pb-24 pb-16 px-24"
+        >
+          <Reservation {...therapy} />
+        </div>
+      ))}
     </div>
-  );
-};
+  </div>
+);
+
+export const Schedule = connect<any, any, any>((state: any) => ({
+  schedule: state.schedule.items
+}))(ScheduleComponent);

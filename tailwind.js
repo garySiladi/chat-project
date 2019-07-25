@@ -132,7 +132,8 @@ module.exports = {
     flex: {
       "1": "1 1 0%",
       auto: "1 1 auto",
-      third: "0 1 33%",
+      3: "0 1 33%",
+      4: "0 1 25%",
       initial: "0 1 auto",
       none: "none"
     },
@@ -398,7 +399,8 @@ module.exports = {
   corePlugins: {},
   plugins: [
     require("tailwindcss-transition")({
-      standard: "all .3s ease-in"
+      standard:
+        "background-color .3s ease-in, box-shadow .3s ease-in, border-color .3s ease-in"
     })
   ]
 };

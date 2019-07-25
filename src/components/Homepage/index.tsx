@@ -5,9 +5,8 @@ import { Description } from "../Description/Description";
 import { Logo } from "./Logo";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
 import { DescriptionAndButton } from "../Description/DescriptionAndButton";
-import { ArticlesCollection } from "../ArticlesCollection";
+import { HomepageArticlesCollection } from "../ArticlesCollection/HomepageArticlesCollection";
 import { ChatInfo } from "../ChatInfo";
-import { Wrapper } from "../ArticlesCollection/HomepageWrapper";
 export const HomePage: FC<RouteComponentProps> = () => (
   <>
     <Logo />
@@ -20,8 +19,6 @@ export const HomePage: FC<RouteComponentProps> = () => (
     <DescriptionWrapper>
       <DescriptionAndButton />
     </DescriptionWrapper>
-    <ArticlesCollection limit="3">
-      {articles => <Wrapper articles={articles} />}
-    </ArticlesCollection>
+    <HomepageArticlesCollection />
   </>
 );

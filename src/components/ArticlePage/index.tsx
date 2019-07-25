@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RouteComponentProps } from "@reach/router";
 import { Article } from "./Article";
 import { Image } from "../Image";
@@ -6,6 +6,7 @@ import { normalizeArticleData } from "../../utils/article";
 import { Button } from "../Button";
 import { DescriptionAndButton } from "../Description/DescriptionAndButton";
 import { DescriptionWrapper } from "../Description/DescriptionWrapper";
+import { backendHostname } from "../../RoutesConfig";
 
 interface IProps extends RouteComponentProps {
   articleId?: string;
@@ -29,7 +30,7 @@ export const ArticlePage = ({ articleId }: IProps) => {
     const fetchData = async () => {
       setIsError(false);
       setIsLoading(true);
-      fetch(`http://localhost:3000/articles?id=${articleId}`)
+      fetch(`${backendHostname.dev}/articles?id=${articleId}`)
         .then(response => response.json())
         .then(response => setArticle(normalizeArticleData(response[0])))
         .catch(() => setIsError(true));

@@ -2,6 +2,7 @@ import React, { FC } from "react";
 import { ReservationInfo, IReservationInfo } from "../Schedule/ReservationInfo";
 import { AvailabilityBar } from "./AvailabilityBar";
 import { Counter } from "../Schedule/Counter";
+import dayjs = require("dayjs");
 
 interface IProps extends IReservationInfo {
   attendants: number;
@@ -15,12 +16,12 @@ export const Reservation: FC<IProps> = ({
   timeLength,
   room,
   therapeutName,
-  name
+  name = "CHAT"
 }) => (
   <div className="flex flex-wrap">
     <div className="w-full lg:w-1/2">
       <ReservationInfo
-        date={date}
+        date={dayjs(date).format("HH:MM")}
         name={name}
         therapeutName={therapeutName}
         room={room}

@@ -27,7 +27,7 @@ export const Counter = () => {
             </Button>
           </div>
         </div>
-        <Button isInverted isStretched className="flex-1 ml-16">
+        <Button isInverted className="flex-1 ml-16">
           Rezervovať
         </Button>
       </div>

@@ -5,6 +5,8 @@ import { scrollToTop } from "./utils/window";
 import { HomePage } from "./components/HomePage";
 import { ArticlesCollectionPage } from "./components/ArticlesCollectionPage";
 import { ArticlePage } from "./components/ArticlePage";
+import { TherapiesCollectionPage } from "./components/TherapiesCollectionPage";
+import { ScheduleCollectionPage } from "./components/ScheduleCollectionPage";
 
 const ScrollToTop: FC<RouteComponentProps> = ({ children, location }) => {
   const { pathname } = location || { pathname: "/" };
@@ -23,8 +25,10 @@ export default () => (
         <ScrollToTop location={location}>
           <Router>
             <HomePage path="/" />
-            <ArticlesCollectionPage path="/clanky" />
-            <ArticlePage path="/articles/:articleId" />
+            <ArticlesCollectionPage path="articles" />
+            <TherapiesCollectionPage path="therapies" />
+            <ScheduleCollectionPage path="schedule/*" />
+            <ArticlePage path="articles/:articleId" />
           </Router>
         </ScrollToTop>
       )}

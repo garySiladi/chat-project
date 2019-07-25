@@ -4,15 +4,15 @@ import { Link } from "@reach/router";
 export const links = [
   {
     title: "Arteterapie",
-    to: "/arteterapie"
+    to: "/therapies"
   },
   {
     title: "Rozvrh",
-    to: "/rozvrh"
+    to: "/schedule"
   },
   {
     title: "Články",
-    to: "/clanky"
+    to: "/articles"
   }
 ];
 

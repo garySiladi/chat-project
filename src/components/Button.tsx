@@ -20,7 +20,7 @@ export const Button: FC<IProps> = ({
   <button
     onClick={onClick}
     className={classnames(
-      "font-lato text-16 hover:shadow-lg active:opacity-50 font-bold border-solid border border-black transition rounded-12",
+      "font-lato hover:shadow-lg active:opacity-50 font-bold border-solid border border-black transition rounded-12",
       {
         [`${
           isInverted
